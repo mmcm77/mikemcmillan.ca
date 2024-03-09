@@ -9,7 +9,7 @@ const LinksSection: React.FC = () => {
         </h2>
         <ul className="flex sm:flex-row justify-center gap-6">
           <li>
-            <Link href="https://www.linkedin.com/in/mmcmillan/">
+            <Link href="www.linkedin.com/in/mcmillanm">
               <div className="text-gray-300 hover:underline">LinkedIn</div>
             </Link>
           </li>
