@@ -5,7 +5,7 @@ const LinksSection: React.FC = () => {
     <section className="py-2">
       <div className="container mx-auto px-4">
         <h2 className="text-2xl font-medium mb-4 text-center">
-          Let's Connect!
+          Let&apos;s connect!
         </h2>
         <ul className="flex sm:flex-row justify-center gap-6">
           <li>
