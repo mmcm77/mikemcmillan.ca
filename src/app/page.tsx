@@ -13,8 +13,8 @@ export default function Home() {
             </h1>
             <div className="mt-4 sm:text-xl/relaxed">Product manager 🏗️</div>
             <div className="mt-4 sm:text-l/relaxed">
-              Product leader with a decade of experience across Product
-              Management, Strategy and GTM.
+              Product leader with a decade of experience across product
+              management, strategy and GTM.
             </div>
           </header>
         </div>
