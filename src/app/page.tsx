@@ -10,13 +10,13 @@ export default function Home() {
               Hey, I{"'"}m Mike 👋
             </div>
             <div className="py-12 sm:text-l/relaxed">
-              I'm a product leader with a decade of{" "}
+              I{"'"}m a product leader with a decade of{" "}
               <Link href="/work" className="text-blue-400">
                 experience
               </Link>{" "}
               in product management, strategy, and go-to-market execution.
-              Throughout my career, I've demonstrated a consistent ability to
-              build products from scratch, attracting over $50 million in
+              Throughout my career, I{"'"}ve demonstrated a consistent ability
+              to build products from scratch, attracting over $50 million in
               venture funding to support my vision.
               <br />
               <br />I thrive on leading and developing high-performing R&D
@@ -29,7 +29,7 @@ export default function Home() {
         </div>
 
         <div className="container py-12">
-          <h2 className="text-2xl font-medium mb-4">Let&apos;s connect!</h2>
+          <h2 className="text-2xl font-medium mb-4">Let{"'"}s connect!</h2>
           <ul className="flex sm:flex-row gap-6">
             <li>
               <Link href="https://www.linkedin.com/in/mcmillanm">

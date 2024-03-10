@@ -37,12 +37,12 @@ export default function Home() {
               data, identity verification, and payments. <br />
               <br />
               My work spearheaded geographic expansion into Nigeria, South
-              Africa, and Kenya, solidifying Okra's position as Africa's top
-              open finance infrastructure provider. I consistently prioritized
-              user research and data-driven insights to craft exceptional user
-              experiences. Additionally, my focus on process improvements and
-              team development fostered a culture of innovation and rapid
-              iteration.
+              Africa, and Kenya, solidifying Okra{"'"}s position as Africa{"'"}s
+              top open finance infrastructure provider. I consistently
+              prioritized user research and data-driven insights to craft
+              exceptional user experiences. Additionally, my focus on process
+              improvements and team development fostered a culture of innovation
+              and rapid iteration.
             </div>
           </div>
 
@@ -61,7 +61,7 @@ export default function Home() {
               >
                 IntegrationOS
               </Link>
-              {")"}, I played a crucial role in steering the company's
+              {")"}, I played a crucial role in steering the company{"'"}s
               transformation from a digital agency model to a product-centric
               organization. My implementation of agile methodologies and
               prioritization frameworks streamlined product development
@@ -126,8 +126,8 @@ export default function Home() {
               <br />I focused on innovative solutions to capture market share
               and played a key role in designing and implementing systems that
               streamlined product development processes. My efforts were
-              instrumental in driving the company's expansion from Canada into
-              the USA and Australia.
+              instrumental in driving the company{"'"}s expansion from Canada
+              into the USA and Australia.
             </div>
           </div>
 
@@ -150,8 +150,8 @@ export default function Home() {
               full-time role where I contributed to international marketing
               campaigns and digital strategies. <br />
               <br />
-              My work focused on enhancing the company's digital presence and
-              reach across their media portfolio, which included the NHL
+              My work focused on enhancing the company{"'"}s digital presence
+              and reach across their media portfolio, which included the NHL
               Network, WFN {"(World Fishing Network)"}, GolTV, and MLG{" "}
               {"(Major League Gaming)"}.
             </div>
