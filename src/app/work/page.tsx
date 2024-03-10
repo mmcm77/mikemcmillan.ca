@@ -93,11 +93,11 @@ export default function Home() {
               Initially joining Bookmark.com as their growth marketing and
               operations lead, I was quickly promoted to Head of Product. This
               role required a rapid pivot, and I successfully led the team in
-              repositioning the platform with an "AI-powered" focus as a key
-              market differentiator. <br />
+              repositioning the platform with an {"'"}AI-powered{"'"} focus as a
+              key market differentiator. <br />
               <br />
               My leadership was instrumental in scaling the MVP and ultimately
-              contributing to the company's strategic{" "}
+              contributing to the company{"'"}s strategic{" "}
               <Link
                 href="https://markets.businessinsider.com/news/stocks/moneris-invests-and-partners-with-bookmark-to-deliver-online-business-solutions-for-canadian-small-businesses-1028828832"
                 className="text-blue-400"
