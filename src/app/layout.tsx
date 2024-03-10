@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import Navbar from "@/components/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+import "./globals.css";
+
+import Nav from "@/components/Nav";
 
 export const metadata: Metadata = {
   title: "Mike McMillan | Product Manager portfolio",
@@ -11,14 +10,17 @@ export const metadata: Metadata = {
     "Experienced Product Manager with a track record in strategy, GTM, and product development. Skilled in Agile, data-driven decision making, and cross-functional leadership.",
 };
 
-const Layout = ({ children }: { children: React.ReactNode }) => {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <main>{children}</main>
+      <body className="container mx-auto px-12 max-w-4xl">
+        <Nav />
+        <div className="">{children}</div>
       </body>
     </html>
   );
-};
-
-export default Layout;
+}
