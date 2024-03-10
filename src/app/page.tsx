@@ -7,7 +7,7 @@ export default function Home() {
         <div className="">
           <div className="">
             <div className="text-xl font-extrabold sm:text-4xl">
-              Hey, I&apos;m Mike 👋
+              Hey, I{"'"}m Mike 👋
             </div>
             <div className="py-12 sm:text-l/relaxed">
               I'm a product leader with a decade of{" "}
