@@ -66,12 +66,13 @@ export default function Home() {
               organization. My implementation of agile methodologies and
               prioritization frameworks streamlined product development
               processes, ensuring alignment between business goals and user
-              needs. During my tenure,
+              needs.
               <br />
-              <br />I successfully launched over 20 microservice products,
-              building a robust client portfolio that included Fanatics, Sonnet
-              Insurance, Hubba, and Boon. My emphasis on product-led growth was
-              a key factor in the company securing{" "}
+              <br />
+              During my tenure, I successfully launched over 20 microservice
+              products, building a robust client portfolio that included
+              Fanatics, Sonnet Insurance, Hubba, and Boon. My emphasis on
+              product-led growth was a key factor in the company securing{" "}
               <Link
                 href="https://betakit.com/buildable-secures-3-76-million-cad-to-empower-developers-with-low-code-software/"
                 className="text-blue-400"
