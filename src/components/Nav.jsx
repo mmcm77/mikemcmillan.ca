@@ -2,9 +2,9 @@ import Link from "next/link";
 
 const Nav = () => {
   return (
-    <nav className="py-12 pb-24 text-gray-300">
-      <div className="container mx-auto flex-row items-center justify-between">
-        <ul className="flex flex-row gap-4">
+    <div className="navbar pt-8 pb-24 flex justify-center items-center">
+      <div className="flex justify-center items-center">
+        <ul className="menu menu-horizontal px-1">
           <li>
             <Link href="/">Home</Link>
           </li>
@@ -13,7 +13,7 @@ const Nav = () => {
           </li>
         </ul>
       </div>
-    </nav>
+    </div>
   );
 };
 

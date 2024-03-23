@@ -28,23 +28,31 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="container py-12">
-          <h2 className="text-2xl font-medium mb-4">Let{"'"}s connect!</h2>
+        <div className="container">
+          <h2 className="text-lg font-medium sm:text-2xl py-8">
+            Let{"'"}s connect!
+          </h2>
           <ul className="flex sm:flex-row gap-6">
             <li>
-              <Link href="https://www.linkedin.com/in/mcmillanm">
-                <div className="text-gray-300 hover:underline">LinkedIn</div>
-              </Link>
+              <a
+                className="btn btn-outline"
+                href="https://www.linkedin.com/in/mcmillanm"
+              >
+                LinkedIn
+              </a>
             </li>
             <li>
-              <Link href="https://github.com/mmcm77">
-                <p className="text-gray-300 hover:underline">GitHub</p>
-              </Link>
+              <a className="btn btn-outline" href="https://github.com/mmcm77">
+                GitHub
+              </a>
             </li>
             <li>
-              <Link href="mailto:mikemcmillan55@gmail.com">
-                <p className="text-gray-300 hover:underline">Email</p>
-              </Link>
+              <a
+                className="btn btn-outline"
+                href="mailto:mikemcmillan55@gmail.com"
+              >
+                Email
+              </a>
             </li>
           </ul>
         </div>
