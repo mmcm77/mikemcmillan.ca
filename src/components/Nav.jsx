@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Nav: React.FC = () => {
+const Nav = () => {
   return (
     <nav className="py-12 pb-24 text-gray-300">
       <div className="container mx-auto flex-row items-center justify-between">
