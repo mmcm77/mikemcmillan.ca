@@ -17,7 +17,7 @@ export default function Home() {
               in product management, strategy, and go-to-market execution.
               Throughout my career, I{"'"}ve demonstrated a consistent ability
               to build products from scratch, attracting over $50 million in
-              venture funding to support my vision.
+              venture funding to support my product vision.
               <br />
               <br />I thrive on leading and developing high-performing R&D
               teams, partnering effectively with sales and marketing
