@@ -1,11 +1,11 @@
 import Link from "next/link";
-
+import React from "react";
 export default function Home() {
   return (
     <main>
       <section className="bg-black text-white">
-        <div className="">
-          <div className="">
+        <div>
+          <div>
             <div className="text-xl font-extrabold sm:text-4xl">
               Hey, I{"'"}m Mike 👋
             </div>
@@ -35,20 +35,23 @@ export default function Home() {
           <ul className="flex sm:flex-row gap-6">
             <li>
               <a
-                className="btn btn-outline"
+                className="inline-flex items-center justify-center px-4 py-2 border border-white text-white hover:bg-white hover:text-black transition-colors rounded-md"
                 href="https://www.linkedin.com/in/mcmillanm"
               >
                 LinkedIn
               </a>
             </li>
             <li>
-              <a className="btn btn-outline" href="https://github.com/mmcm77">
+              <a
+                className="inline-flex items-center justify-center px-4 py-2 border border-white text-white hover:bg-white hover:text-black transition-colors rounded-md"
+                href="https://github.com/mmcm77"
+              >
                 GitHub
               </a>
             </li>
             <li>
               <a
-                className="btn btn-outline"
+                className="inline-flex items-center justify-center px-4 py-2 border border-white text-white hover:bg-white hover:text-black transition-colors rounded-md"
                 href="mailto:mikemcmillan55@gmail.com"
               >
                 Email

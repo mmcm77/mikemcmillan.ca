@@ -1,6 +1,6 @@
 import Link from "next/link";
-
-export default function Home() {
+import React from "react";
+export default function Work() {
   return (
     <main>
       <section className="bg-black text-white">
@@ -13,13 +13,13 @@ export default function Home() {
 
           <hr className="border-gray-500 pb-12" />
 
-          {/* Work section  */}
+          {/* New adventure */}
           <div className="py-4 pb-12">
             <div className="text-l font-bold sm:text-2xl">New adventure</div>
             <div className="text-md text-gray-300">Coming soon...</div>
           </div>
 
-          {/* Work section  */}
+          {/* Okra.ng */}
           <div className="py-4">
             <div className="text-l font-bold sm:text-2xl">Okra.ng</div>
             <div className="text-md text-gray-300">
@@ -46,7 +46,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Work section  */}
+          {/* Buildable.io */}
           <div className="py-4">
             <div className="text-l font-bold sm:text-2xl">Buildable.io</div>
             <div className="text-md text-gray-300">
@@ -83,7 +83,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Work section  */}
+          {/* Bookmark.com */}
           <div className="py-4">
             <div className="text-l font-bold sm:text-2xl">Bookmark.com</div>
             <div className="text-md text-gray-300">
@@ -109,7 +109,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Work section  */}
+          {/* Bid13.com */}
           <div className="py-4">
             <div className="text-l font-bold sm:text-2xl">Bid13.com</div>
             <div className="text-md text-gray-300">
@@ -132,7 +132,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Work section  */}
+          {/* Insight Sports */}
           <div className="pb-12 pt-4">
             <div className="text-l font-bold sm:text-2xl">Insight Sports</div>
             <div className="text-md text-gray-300">
