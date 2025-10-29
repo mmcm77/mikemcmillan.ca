@@ -112,10 +112,6 @@
     --shadow-glow-lg: 0 0 40px 0 rgba(139, 92, 246, 0.3);
   }
 
-  * {
-    @apply border-border;
-  }
-
   body {
     @apply bg-[var(--color-bg-primary)] text-[var(--color-text-secondary)] antialiased;
     font-feature-settings: 'cv11', 'ss01';
@@ -229,7 +225,13 @@
   }
 
   .glass-card-hover {
-    @apply glass-card transition-all duration-300;
+    background: rgba(21, 21, 31, 0.5);
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    border: 1px solid var(--color-border-secondary);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    transition: all 0.3s ease;
   }
 
   .glass-card-hover:hover {
@@ -343,7 +345,14 @@
   }
 
   .badge-primary {
-    @apply badge;
+    display: inline-flex;
+    align-items: center;
+    padding: var(--space-1) var(--space-3);
+    border-radius: var(--radius-full);
+    font-size: var(--text-xs);
+    font-weight: 600;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
     background: rgba(139, 92, 246, 0.1);
     color: var(--color-brand-primary-light);
     border: 1px solid var(--color-brand-primary);
@@ -359,7 +368,11 @@
   }
 
   .card-hover {
-    @apply card;
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border-secondary);
+    border-radius: var(--radius-xl);
+    padding: var(--space-6);
+    transition: all 0.3s ease;
   }
 
   .card-hover:hover {
