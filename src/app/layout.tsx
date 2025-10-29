@@ -2,11 +2,13 @@ import "./globals.css";
 import Nav from "../components/Nav";
 import { Metadata } from "next";
 import React from "react";
+import { GeistSans } from 'geist/font/sans';
+import { GeistMono } from 'geist/font/mono';
 
 export const metadata: Metadata = {
-  title: "Mike McMillan | Product Manager portfolio",
+  title: "Mike McMillan | Product Manager",
   description:
-    "Experienced Product Manager with a track record in strategy, GTM, and product development. Skilled in Agile, data-driven decision making, and cross-functional leadership.",
+    "Product leader with 10+ years building products that scale. $50M+ raised, 100+ products shipped.",
 };
 
 export default function RootLayout({
@@ -15,8 +17,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="bg-black">
-      <body className="container mx-auto px-12 max-w-4xl">
+    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
+      <body className="container mx-auto px-6 md:px-12 max-w-6xl">
         <Nav />
         <div>{children}</div>
       </body>

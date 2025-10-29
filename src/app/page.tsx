@@ -1,63 +1,88 @@
 import Link from "next/link";
 import React from "react";
+
 export default function Home() {
   return (
-    <main>
-      <section className="bg-black text-white">
-        <div>
-          <div>
-            <div className="text-xl font-extrabold sm:text-4xl">
-              Hey, I{"'"}m Mike 👋
-            </div>
-            <div className="py-12 sm:text-l/relaxed">
-              I{"'"}m a product leader with a decade of{" "}
-              <Link href="/work" className="text-blue-400">
+    <main className="min-h-screen">
+      <section className="section">
+        {/* Hero Section */}
+        <div className="mb-24 animate-fade-in">
+          <div className="mb-6">
+            <h1 className="text-display text-gradient mb-6">
+              Building products that scale
+            </h1>
+            <p className="text-body-large max-w-3xl">
+              Product leader with a decade of{" "}
+              <Link href="/work" className="link-primary">
                 experience
               </Link>{" "}
               in product management, strategy, and go-to-market execution.
-              Throughout my career, I{"'"}ve demonstrated a consistent ability
+              Throughout my career, I've demonstrated a consistent ability
               to build products from scratch, attracting over $50 million in
               venture funding to support my product vision.
-              <br />
-              <br />I thrive on leading and developing high-performing R&D
-              teams, partnering effectively with sales and marketing
-              organizations, and tackling complex problems with a strategic,
-              hands-on approach.
+            </p>
+          </div>
+
+          {/* Stats Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-12">
+            <div className="glass-card-hover p-6 text-center animate-slide-up">
+              <div className="text-5xl font-bold text-gradient mb-2">10+</div>
+              <div className="text-caption">Years Experience</div>
             </div>
-            <div className="py-12 sm:text-l/relaxed"></div>
+            <div className="glass-card-hover p-6 text-center animate-slide-up" style={{ animationDelay: '0.1s' }}>
+              <div className="text-5xl font-bold text-gradient mb-2">$50M+</div>
+              <div className="text-caption">Capital Raised</div>
+            </div>
+            <div className="glass-card-hover p-6 text-center animate-slide-up" style={{ animationDelay: '0.2s' }}>
+              <div className="text-5xl font-bold text-gradient mb-2">100+</div>
+              <div className="text-caption">Products Shipped</div>
+            </div>
           </div>
         </div>
 
-        <div className="container">
-          <h2 className="text-lg font-medium sm:text-2xl py-8">
-            Let{"'"}s connect!
-          </h2>
-          <ul className="flex sm:flex-row gap-6">
-            <li>
-              <a
-                className="inline-flex items-center justify-center px-4 py-2 border border-white text-white hover:bg-white hover:text-black transition-colors rounded-md"
-                href="https://www.linkedin.com/in/mcmillanm"
-              >
-                LinkedIn
-              </a>
-            </li>
-            <li>
-              <a
-                className="inline-flex items-center justify-center px-4 py-2 border border-white text-white hover:bg-white hover:text-black transition-colors rounded-md"
-                href="https://github.com/mmcm77"
-              >
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a
-                className="inline-flex items-center justify-center px-4 py-2 border border-white text-white hover:bg-white hover:text-black transition-colors rounded-md"
-                href="mailto:mikemcmillan55@gmail.com"
-              >
-                Email
-              </a>
-            </li>
-          </ul>
+        {/* About Content */}
+        <div className="space-y-8 max-w-4xl mb-24">
+          <div className="card-hover p-8">
+            <h2 className="text-heading-4 mb-4">My Approach</h2>
+            <p className="text-body">
+              I thrive on leading and developing high-performing R&D
+              teams, partnering effectively with sales and marketing
+              organizations, and tackling complex problems with a strategic,
+              hands-on approach. My work combines rigorous data analysis with rapid
+              experimentation, strategic product thinking with hands-on execution.
+            </p>
+          </div>
+        </div>
+
+        {/* CTA Section */}
+        <div className="text-center">
+          <h2 className="text-heading-3 mb-4">Let's connect</h2>
+          <p className="text-body mb-8 max-w-2xl mx-auto">
+            Want to chat about product management, startups, or potential
+            collaborations? Reach out on LinkedIn, check out my GitHub, or
+            send me an email.
+          </p>
+
+          <div className="flex flex-wrap gap-4 justify-center">
+            <a
+              href="https://www.linkedin.com/in/mcmillanm"
+              className="btn-primary"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/mmcm77"
+              className="btn-secondary"
+            >
+              GitHub
+            </a>
+            <a
+              href="mailto:mikemcmillan55@gmail.com"
+              className="btn-secondary"
+            >
+              Email
+            </a>
+          </div>
         </div>
       </section>
     </main>
