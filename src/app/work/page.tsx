@@ -3,32 +3,32 @@ import React from "react";
 export default function Work() {
   return (
     <main>
-      <section className="bg-black text-white">
+      <section className="py-12 sm:py-16">
         <div className="">
-          <div className="text-xl font-extrabold sm:text-4xl">My work </div>
-          <div className="py-12 sm:text-l/relaxed">
-            On a misson to build beautiful, high-impact products that solve real
+          <h1 className="text-display-hero text-gradient mb-8">My work</h1>
+          <p className="text-body-large-enhanced mb-16 max-w-3xl">
+            On a mission to build beautiful, high-impact products that solve real
             customer problems. Here{"'"}s a summary of my work so far:
-          </div>
+          </p>
 
-          <hr className="border-gray-500 pb-12" />
+          <hr className="border-[var(--color-border-secondary)] mb-12" />
 
           {/* New adventure */}
-          <div className="py-4 pb-12">
-            <div className="text-l font-bold sm:text-2xl">New adventure</div>
-            <div className="text-md text-gray-300">Coming soon...</div>
+          <div className="py-6 pb-12">
+            <h2 className="text-heading-3 mb-2">New adventure</h2>
+            <p className="text-caption mb-4">Coming soon...</p>
           </div>
 
           {/* Okra.ng */}
-          <div className="py-4">
-            <div className="text-l font-bold sm:text-2xl">Okra.ng</div>
-            <div className="text-md text-gray-300">
+          <div className="py-6">
+            <h2 className="text-heading-3 mb-2">Okra.ng</h2>
+            <p className="text-caption mb-4">
               Product Lead | May 2020 – Feb 2024
-            </div>
+            </p>
 
-            <div className="py-4 sm:text-l/relaxed">
+            <div className="text-body-enhanced">
               I joined{" "}
-              <Link href="https://okra.ng/" className="text-blue-400">
+              <Link href="https://okra.ng/" className="link-primary">
                 Okra
               </Link>{" "}
               as their first product hire and played a pivotal role in building
@@ -47,17 +47,17 @@ export default function Work() {
           </div>
 
           {/* Buildable.io */}
-          <div className="py-4">
-            <div className="text-l font-bold sm:text-2xl">Buildable.io</div>
-            <div className="text-md text-gray-300">
+          <div className="py-6">
+            <h2 className="text-heading-3 mb-2">Buildable.io</h2>
+            <p className="text-caption mb-4">
               Product Manager | May 2019 – May 2020
-            </div>
+            </p>
 
-            <div className="py-4 sm:text-l/relaxed">
+            <div className="text-body-enhanced">
               At Buildable.io {"(now rebranded as "}
               <Link
                 href="https://www.integrationos.com/"
-                className="text-blue-400"
+                className="link-primary"
               >
                 IntegrationOS
               </Link>
@@ -75,7 +75,7 @@ export default function Work() {
               product-led growth was a key factor in the company securing{" "}
               <Link
                 href="https://betakit.com/buildable-secures-3-76-million-cad-to-empower-developers-with-low-code-software/"
-                className="text-blue-400"
+                className="link-primary"
               >
                 Series A funding
               </Link>{" "}
@@ -84,13 +84,13 @@ export default function Work() {
           </div>
 
           {/* Bookmark.com */}
-          <div className="py-4">
-            <div className="text-l font-bold sm:text-2xl">Bookmark.com</div>
-            <div className="text-md text-gray-300">
+          <div className="py-6">
+            <h2 className="text-heading-3 mb-2">Bookmark.com</h2>
+            <p className="text-caption mb-4">
               Head of Product | July 2017 – April 2019
-            </div>
+            </p>
 
-            <div className="py-4 sm:text-l/relaxed">
+            <div className="text-body-enhanced">
               Initially joining Bookmark.com as their growth marketing and
               operations lead, I was quickly promoted to Head of Product. This
               role required a rapid pivot, and I successfully led the team in
@@ -101,7 +101,7 @@ export default function Work() {
               contributing to the company{"'"}s strategic{" "}
               <Link
                 href="https://markets.businessinsider.com/news/stocks/moneris-invests-and-partners-with-bookmark-to-deliver-online-business-solutions-for-canadian-small-businesses-1028828832"
-                className="text-blue-400"
+                className="link-primary"
               >
                 acquisition
               </Link>{" "}
@@ -110,15 +110,15 @@ export default function Work() {
           </div>
 
           {/* Bid13.com */}
-          <div className="py-4">
-            <div className="text-l font-bold sm:text-2xl">Bid13.com</div>
-            <div className="text-md text-gray-300">
+          <div className="py-6">
+            <h2 className="text-heading-3 mb-2">Bid13.com</h2>
+            <p className="text-caption mb-4">
               Product Manager | November 2013 – June 2017
-            </div>
+            </p>
 
-            <div className="py-4 sm:text-l/relaxed">
+            <div className="text-body-enhanced">
               At{" "}
-              <Link href="https://bid13.com/" className="text-blue-400">
+              <Link href="https://bid13.com/" className="link-primary">
                 Bid13.com
               </Link>
               , an ecommerce marketplace for storage auctions, I worked closely
@@ -133,17 +133,17 @@ export default function Work() {
           </div>
 
           {/* Insight Sports */}
-          <div className="pb-12 pt-4">
-            <div className="text-l font-bold sm:text-2xl">Insight Sports</div>
-            <div className="text-md text-gray-300">
+          <div className="py-6 pb-12">
+            <h2 className="text-heading-3 mb-2">Insight Sports</h2>
+            <p className="text-caption mb-4">
               Marketing | July 2011 – November 2013
-            </div>
+            </p>
 
-            <div className="py-4 sm:text-l/relaxed">
+            <div className="text-body-enhanced">
               Beginning as an intern at{" "}
               <Link
                 href="https://en.wikipedia.org/wiki/Insight_Sports"
-                className="text-blue-400"
+                className="link-primary"
               >
                 Insight Sports
               </Link>
@@ -158,7 +158,7 @@ export default function Work() {
             </div>
           </div>
 
-          <hr className="border-gray-500 py-12" />
+          <hr className="border-[var(--color-border-secondary)] mt-12" />
         </div>
       </section>
     </main>

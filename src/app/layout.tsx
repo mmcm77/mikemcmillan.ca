@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <body>
         <Nav />
-        <main className="container mx-auto px-6 sm:px-8 lg:px-12 max-w-6xl">
+        <main className="px-6 sm:px-[3rem] lg:px-[5rem] xl:px-[6rem] max-w-[1400px] mx-auto">
           {children}
         </main>
       </body>
