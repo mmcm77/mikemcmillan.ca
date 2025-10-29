@@ -18,9 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
-      <body className="container mx-auto px-6 md:px-12 max-w-6xl">
+      <body>
         <Nav />
-        <div>{children}</div>
+        <main className="container mx-auto px-6 sm:px-8 lg:px-12 max-w-6xl">
+          {children}
+        </main>
       </body>
     </html>
   );
