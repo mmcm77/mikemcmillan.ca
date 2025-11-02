@@ -372,7 +372,7 @@ export default function Work() {
 
   return (
     <main>
-      <section className="py-16 sm:py-20 relative">
+      <section className="py-16 sm:py-20 relative -mx-6 sm:-mx-[3rem] lg:-mx-[5rem] xl:-mx-[6rem] px-6 sm:px-[3rem] lg:px-[5rem] xl:px-[6rem]">
         <GridBackground />
         <Spotlight
           translateY={-400}

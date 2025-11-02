@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="pt-12 pb-12 sm:pt-16 sm:pb-16 animate-fade-in relative">
+      <section className="pt-12 pb-12 sm:pt-16 sm:pb-16 animate-fade-in relative -mx-6 sm:-mx-[3rem] lg:-mx-[5rem] xl:-mx-[6rem] px-6 sm:px-[3rem] lg:px-[5rem] xl:px-[6rem]">
         <GridBackground />
         <Spotlight />
         <div className="relative z-10 mb-12">
