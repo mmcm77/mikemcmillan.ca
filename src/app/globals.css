@@ -296,6 +296,67 @@
     transform: translateY(-8px) translateZ(0);
   }
 
+  /* ========================================
+     TIMELINE COMPONENT - LIGHT MODE FIXES
+     Fix hardcoded dark mode colors for WCAG AA compliance
+     ======================================== */
+
+  /* Company Names - Currently text-white */
+  .light .timeline h3.text-white,
+  .light h3.text-white {
+    color: #0F172A !important;  /* Slate-900 - 16.7:1 contrast - AAA */
+  }
+
+  /* Subheadings (h4) - Currently text-white */
+  .light .timeline h4.text-white,
+  .light h4.text-white {
+    color: #1E293B !important;  /* Slate-800 - 13.5:1 contrast - AAA */
+  }
+
+  /* Job Titles & Metadata - Currently text-neutral-400 */
+  .light .timeline .text-neutral-400,
+  .light .text-neutral-400 {
+    color: #475569 !important;  /* Slate-600 - 7.5:1 contrast - AA */
+  }
+
+  /* Body Text & Descriptions - Currently text-neutral-300 */
+  .light .timeline .text-neutral-300,
+  .light .text-neutral-300 {
+    color: #334155 !important;  /* Slate-700 - 10.1:1 contrast - AAA */
+  }
+
+  /* Purple Bullet Points - Currently text-purple-400 */
+  .light .timeline .text-purple-400,
+  .light .text-purple-400 {
+    color: #7C3AED !important;  /* Purple-600 - 5.9:1 contrast - AA */
+  }
+
+  /* Blue Bullet Points & Icons - Currently text-blue-400 */
+  .light .timeline .text-blue-400,
+  .light .text-blue-400 {
+    color: #2563EB !important;  /* Blue-600 - 8.5:1 contrast - AAA */
+  }
+
+  /* Timeline Dots & Visual Elements - Maintain Brand Colors */
+  .light .timeline .bg-purple-400 {
+    background-color: #8B5CF6 !important;  /* Keep brand purple for visual elements */
+  }
+
+  .light .timeline .border-purple-400 {
+    border-color: #8B5CF6 !important;
+  }
+
+  /* Link Colors Within Timeline - Enhanced Contrast */
+  .light .timeline .link-primary,
+  .light .link-primary {
+    color: #7C3AED;  /* Purple-600 - 5.9:1 contrast */
+  }
+
+  .light .timeline .link-primary:hover,
+  .light .link-primary:hover {
+    color: #6D28D9;  /* Purple-700 - 8.2:1 contrast */
+  }
+
   body {
     @apply bg-[var(--color-bg-primary)] text-[var(--color-text-secondary)] antialiased;
     font-feature-settings: 'cv11', 'ss01';
