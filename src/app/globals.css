@@ -184,12 +184,8 @@
   }
 
   .light .stat-card {
-    /* Gradient Background - Adds subtle dimensionality */
-    background: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.9) 0%,
-      rgba(249, 250, 251, 0.85) 100%
-    );
+    /* White Background */
+    background: rgb(255, 255, 255);
 
     /* Enhanced Backdrop Blur - Premium glass effect */
     backdrop-filter: blur(24px) saturate(180%);
@@ -198,7 +194,7 @@
     /* Gradient Border - Multi-tone for depth and visual interest */
     border: 2px solid transparent;
     background-image:
-      linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(249, 250, 251, 0.85) 100%),
+      linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)),
       linear-gradient(135deg,
         rgba(139, 92, 246, 0.4) 0%,
         rgba(139, 92, 246, 0.25) 50%,
@@ -221,16 +217,12 @@
   }
 
   .light .stat-card:hover {
-    /* Enhanced Background - More solid and defined */
-    background: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.98) 0%,
-      rgba(243, 244, 246, 0.95) 100%
-    );
+    /* White Background */
+    background: rgb(255, 255, 255);
 
     /* Stronger Gradient Border - Purple intensifies */
     background-image:
-      linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(243, 244, 246, 0.95) 100%),
+      linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)),
       linear-gradient(135deg,
         rgba(139, 92, 246, 0.6) 0%,
         rgba(139, 92, 246, 0.4) 50%,
