@@ -362,10 +362,12 @@
     font-feature-settings: 'cv11', 'ss01';
     font-variation-settings: 'opsz' auto;
     font-family: var(--font-sans);
+    overflow-x: hidden;
   }
 
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   @media (prefers-reduced-motion: reduce) {
