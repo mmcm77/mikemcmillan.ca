@@ -3,9 +3,9 @@ import React from "react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Bookmark.com Case Study: AI-Powered Website Builder to Acquisition | Mike McMillan",
+  title: "How AI Positioning Led to Acquisition: The Bookmark Story | Mike McMillan",
   description:
-    "How I repositioned Bookmark.com with AI-powered differentiation as Head of Product, scaling the MVP from concept to strategic acquisition by Moneris in 2019.",
+    "How I translated AIDA AI capabilities into market differentiation as Head of Product at Bookmark, reducing website creation time by 33x and driving strategic acquisition by Moneris.",
 };
 
 export default function BookmarkCaseStudy() {
@@ -25,42 +25,42 @@ export default function BookmarkCaseStudy() {
       <section className="pt-8 pb-16 sm:pt-12 sm:pb-20">
         <div className="mb-8">
           <div className="text-[var(--color-accent-blue)] text-sm font-semibold mb-4 tracking-wide uppercase">
-            Case Study
+            AI Product Translation Case Study
           </div>
           <h1 className="text-display-hero text-gradient mb-6">
-            Scaling an AI-Powered Website Builder to Acquisition
+            How AI Positioning Led to Our Acquisition
           </h1>
           <p className="text-body-large-enhanced max-w-3xl mb-8">
-            Joining Bookmark.com as Growth Marketing & Operations Lead, I was quickly
-            promoted to Head of Product where I led the strategic repositioning of the
-            platform with AI-powered differentiation, scaled the MVP, and contributed to
-            the company's{" "}
+            As Head of Product at Bookmark.com, I translated our AIDA AI capabilities into
+            market-differentiating positioning that customers understood and trusted. By focusing
+            on the value AI delivered—reducing website creation from 4.5 hours to 8 minutes—rather
+            than the technology itself, we carved out a unique position in a crowded market and drove{" "}
             <Link
               href="https://markets.businessinsider.com/news/stocks/moneris-invests-and-partners-with-bookmark-to-deliver-online-business-solutions-for-canadian-small-businesses-1028828832"
               className="link-primary"
             >
-              strategic acquisition
+              strategic acquisition by Moneris
             </Link>{" "}
-            by Moneris in 2019.
+            in 2019.
           </p>
 
           {/* Key Metrics */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
             <div className="glass-card-hover p-6 text-center">
-              <div className="text-4xl font-extrabold text-gradient mb-2">AI-First</div>
-              <div className="text-stat-label">Market Positioning</div>
+              <div className="text-4xl font-extrabold text-gradient mb-2">33x</div>
+              <div className="text-stat-label">Faster Website Creation</div>
+            </div>
+            <div className="glass-card-hover p-6 text-center">
+              <div className="text-4xl font-extrabold text-gradient mb-2">8 Min</div>
+              <div className="text-stat-label">AI-Powered Build Time</div>
             </div>
             <div className="glass-card-hover p-6 text-center">
               <div className="text-4xl font-extrabold text-gradient mb-2">2019</div>
-              <div className="text-stat-label">Strategic Acquisition</div>
+              <div className="text-stat-label">Acquisition Exit</div>
             </div>
             <div className="glass-card-hover p-6 text-center">
-              <div className="text-4xl font-extrabold text-gradient mb-2">MVP → Exit</div>
-              <div className="text-stat-label">Product Journey</div>
-            </div>
-            <div className="glass-card-hover p-6 text-center">
-              <div className="text-4xl font-extrabold text-gradient mb-2">2 Years</div>
-              <div className="text-stat-label">July 2017 - April 2019</div>
+              <div className="text-4xl font-extrabold text-gradient mb-2">AI-First</div>
+              <div className="text-stat-label">Market Positioning</div>
             </div>
           </div>
         </div>
@@ -69,28 +69,29 @@ export default function BookmarkCaseStudy() {
         <div className="card-hover p-8 mb-12">
           <h3 className="text-heading-4 mb-4">Company Context</h3>
           <p className="text-body-enhanced mb-4">
-            Bookmark.com was a Toronto-based startup building an AI-powered website builder
-            to help small businesses create professional websites in minutes. The company
-            was competing in a crowded market dominated by Wix, Squarespace, and WordPress,
-            requiring sharp differentiation and execution excellence.
+            Bookmark.com was a Toronto-based startup that built AIDA (Artificial Intelligence Design Assistant),
+            an AI-powered website builder for small businesses. The product had impressive technical capabilities—using
+            machine learning to generate custom websites from business information—but faced the classic AI product
+            challenge: translating impressive technology into a value proposition that customers understood, trusted,
+            and would pay for in a market dominated by established players like Wix, Squarespace, and WordPress.
           </p>
           <div className="grid md:grid-cols-3 gap-4 mt-6">
             <div className="border border-[var(--color-border-primary)] rounded-lg p-4">
-              <div className="text-[var(--color-accent-blue)] font-semibold mb-2">My Journey</div>
+              <div className="text-[var(--color-accent-blue)] font-semibold mb-2">AI Technology</div>
               <div className="text-[var(--color-text-secondary)] text-sm">
-                Growth Marketing/Ops → Head of Product
+                AIDA - AI Design Assistant for automated website creation
               </div>
             </div>
             <div className="border border-[var(--color-border-primary)] rounded-lg p-4">
-              <div className="text-[var(--color-accent-blue)] font-semibold mb-2">Market</div>
+              <div className="text-[var(--color-accent-blue)] font-semibold mb-2">My Role</div>
               <div className="text-[var(--color-text-secondary)] text-sm">
-                SMB website builders (competitive landscape)
+                Head of Product (promoted from Growth Lead)
               </div>
             </div>
             <div className="border border-[var(--color-border-primary)] rounded-lg p-4">
-              <div className="text-[var(--color-accent-blue)] font-semibold mb-2">Acquirer</div>
+              <div className="text-[var(--color-accent-blue)] font-semibold mb-2">Outcome</div>
               <div className="text-[var(--color-text-secondary)] text-sm">
-                Moneris (Canadian payment processor)
+                Strategic acquisition by Moneris (2019)
               </div>
             </div>
           </div>
@@ -100,53 +101,55 @@ export default function BookmarkCaseStudy() {
       {/* The Challenge */}
       <section className="py-16 sm:py-20">
         <div className="max-w-4xl">
-          <h2 className="text-heading-section mb-8">The Challenge</h2>
+          <h2 className="text-heading-section mb-8">The AI Product Translation Challenge</h2>
 
           <div className="space-y-6">
             <div className="card-hover p-8">
               <h3 className="text-heading-4 mb-4 text-gradient">
-                Differentiating in a Saturated Website Builder Market
+                Translating AI Capabilities into Market Differentiation
               </h3>
               <p className="text-body-enhanced mb-4">
-                When I joined as Head of Product in 2017, the website builder market was
-                highly competitive with well-established players. We needed to:
+                AIDA had impressive technical capabilities—using machine learning to analyze business
+                information and automatically generate custom website designs. But impressive technology
+                doesn't equal product success. I needed to translate these AI capabilities into positioning
+                and features that customers would understand, trust, and pay for:
               </p>
               <ul className="space-y-3">
                 <li className="flex gap-3 items-start text-body-enhanced">
                   <span className="text-[var(--color-accent-blue)] mt-1">•</span>
-                  <span><strong>Find differentiation:</strong> Wix had scale and features,
-                  Squarespace had design, WordPress had flexibility—we needed our own wedge</span>
+                  <span><strong>Capability → Value Translation:</strong> "AI design assistant" meant nothing
+                  to SMB owners. I needed to translate this into "8-minute website creation" vs. 4.5 hours manually</span>
                 </li>
                 <li className="flex gap-3 items-start text-body-enhanced">
                   <span className="text-[var(--color-accent-blue)] mt-1">•</span>
-                  <span><strong>Rapid pivot execution:</strong> The market was moving fast,
-                  and we needed to reposition quickly while maintaining product velocity</span>
+                  <span><strong>Build Trust in AI:</strong> Small business owners were skeptical of "AI-generated"
+                  designs. I needed to position AI as assistance, not replacement—helping them express their vision</span>
                 </li>
                 <li className="flex gap-3 items-start text-body-enhanced">
                   <span className="text-[var(--color-accent-blue)] mt-1">•</span>
-                  <span><strong>Scale the MVP:</strong> Move beyond initial concept to a
-                  production-ready platform that could serve thousands of SMBs</span>
+                  <span><strong>AI as Differentiation:</strong> In a market dominated by Wix, Squarespace, and WordPress,
+                  AI wasn't just a feature—it was our positioning wedge that needed clear articulation</span>
                 </li>
                 <li className="flex gap-3 items-start text-body-enhanced">
                   <span className="text-[var(--color-accent-blue)] mt-1">•</span>
-                  <span><strong>Prove unit economics:</strong> Demonstrate to potential
-                  acquirers that our CAC/LTV model was sustainable</span>
+                  <span><strong>Make AI Tangible:</strong> Demonstrate the value of AI through concrete metrics and user
+                  outcomes, not technical jargon about ML models and training data</span>
                 </li>
                 <li className="flex gap-3 items-start text-body-enhanced">
                   <span className="text-[var(--color-accent-blue)] mt-1">•</span>
-                  <span><strong>Build for acquisition:</strong> Create strategic value for
-                  potential acquirers while building a great product for users</span>
+                  <span><strong>Commercial Validation:</strong> Prove to acquirers that AI positioning drove sustainable
+                  CAC/LTV economics and market differentiation, not just technical novelty</span>
                 </li>
               </ul>
             </div>
 
             <div className="card-hover p-8">
-              <h3 className="text-heading-4 mb-4">The Product Question</h3>
+              <h3 className="text-heading-4 mb-4">The Core Product Question</h3>
               <p className="text-body-enhanced">
-                How do we position Bookmark as the AI-powered alternative in a crowded market,
-                deliver on that promise with technology that actually helps users build better
-                websites faster, and scale the product to demonstrate acquisition-worthy value—all
-                while competing against companies with 10x our resources?
+                How do we translate AIDA's AI capabilities into positioning that small business owners
+                understand and trust, deliver measurable time-to-value that justifies AI differentiation,
+                and create commercial traction that demonstrates acquisition-worthy strategic value—all
+                while competing against companies with 10x our resources and established market presence?
               </p>
             </div>
           </div>
