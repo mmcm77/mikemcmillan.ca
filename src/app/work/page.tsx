@@ -406,31 +406,31 @@ export default function Work() {
           </div>
 
           {/* Journey Overview Bar */}
-          <div className="inline-flex flex-wrap items-center gap-4 sm:gap-6 py-4 px-6 rounded-full bg-[var(--color-bg-secondary)]/60 backdrop-blur-md border border-[var(--color-border-secondary)] mb-16">
+          <div className="journey-stats-bar inline-flex flex-wrap items-center gap-4 sm:gap-6 py-4 px-6 rounded-full bg-[var(--color-bg-secondary)]/60 backdrop-blur-md border border-[var(--color-border-secondary)] mb-16">
             <div className="flex items-center gap-2">
-              <span className="text-3xl sm:text-4xl font-bold text-white">10+</span>
-              <span className="text-xs sm:text-sm text-[var(--color-text-tertiary)] uppercase tracking-wide">Years</span>
+              <span className="journey-stat-number text-3xl sm:text-4xl font-bold text-white">10+</span>
+              <span className="journey-stat-label text-xs sm:text-sm text-[var(--color-text-tertiary)] uppercase tracking-wide">Years</span>
             </div>
 
-            <div className="w-px h-8 bg-[var(--color-border-secondary)]" />
+            <div className="journey-stat-divider w-px h-8 bg-[var(--color-border-secondary)]" />
 
             <div className="flex items-center gap-2">
-              <span className="text-3xl sm:text-4xl font-bold text-white">7</span>
-              <span className="text-xs sm:text-sm text-[var(--color-text-tertiary)] uppercase tracking-wide">Companies</span>
+              <span className="journey-stat-number text-3xl sm:text-4xl font-bold text-white">7</span>
+              <span className="journey-stat-label text-xs sm:text-sm text-[var(--color-text-tertiary)] uppercase tracking-wide">Companies</span>
             </div>
 
-            <div className="w-px h-8 bg-[var(--color-border-secondary)]" />
+            <div className="journey-stat-divider w-px h-8 bg-[var(--color-border-secondary)]" />
 
             <div className="flex items-center gap-2">
-              <span className="text-3xl sm:text-4xl font-bold text-white">3</span>
-              <span className="text-xs sm:text-sm text-[var(--color-text-tertiary)] uppercase tracking-wide">Exits</span>
+              <span className="journey-stat-number text-3xl sm:text-4xl font-bold text-white">3</span>
+              <span className="journey-stat-label text-xs sm:text-sm text-[var(--color-text-tertiary)] uppercase tracking-wide">Exits</span>
             </div>
 
-            <div className="w-px h-8 bg-[var(--color-border-secondary)]" />
+            <div className="journey-stat-divider w-px h-8 bg-[var(--color-border-secondary)]" />
 
             <div className="flex items-center gap-2">
-              <span className="text-3xl sm:text-4xl font-bold text-[var(--color-brand-primary)]">100+</span>
-              <span className="text-xs sm:text-sm text-[var(--color-text-tertiary)] uppercase tracking-wide">Products</span>
+              <span className="journey-stat-number text-3xl sm:text-4xl font-bold text-[var(--color-brand-primary)]">100+</span>
+              <span className="journey-stat-label text-xs sm:text-sm text-[var(--color-text-tertiary)] uppercase tracking-wide">Products</span>
             </div>
           </div>
 

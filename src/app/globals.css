@@ -183,6 +183,27 @@
                 0 8px 24px rgba(139, 92, 246, 0.15);
   }
 
+  /* Journey Stats Bar - Light Mode */
+  .light .journey-stats-bar {
+    background: rgba(255, 255, 255, 0.8) !important;
+    border-color: rgba(139, 92, 246, 0.2);
+    box-shadow:
+      0 2px 8px rgba(0, 0, 0, 0.04),
+      0 0 0 1px rgba(139, 92, 246, 0.08) inset;
+  }
+
+  .light .journey-stat-number {
+    color: var(--color-text-primary) !important;
+  }
+
+  .light .journey-stat-label {
+    color: var(--color-text-secondary) !important;
+  }
+
+  .light .journey-stat-divider {
+    background-color: rgba(139, 92, 246, 0.15) !important;
+  }
+
   .light .stat-card {
     /* Override dark background completely */
     background: rgb(255, 255, 255) !important;
