@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { Spotlight, GridBackground } from "@/components/ui/spotlight-new";
 import CopyButton from "@/components/CopyButton";
+import { FullWidthBackground } from "@/components/FullWidthBackground";
 
 export default function AITools() {
   const agents = [
@@ -307,36 +308,40 @@ Provide specific code examples for recommended changes.`,
   return (
     <main>
       {/* Hero Section */}
-      <section className="py-16 sm:py-20 relative -mx-6 sm:-mx-[3rem] lg:-mx-[5rem] xl:-mx-[6rem] px-6 sm:px-[3rem] lg:px-[5rem] xl:px-[6rem]">
-        <GridBackground />
-        <Spotlight />
+      <FullWidthBackground>
+        <FullWidthBackground.Background>
+          <GridBackground />
+          <Spotlight />
+        </FullWidthBackground.Background>
 
-        <div className="relative z-10 mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--color-border-primary)] bg-[var(--color-bg-secondary)]/40 mb-6">
-            <span className="text-xs font-semibold text-[var(--color-text-tertiary)] uppercase tracking-wider">
-              AI Tools & Resources
-            </span>
+        <FullWidthBackground.Content className="py-16 sm:py-20">
+          <div className="relative z-10 mb-16">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--color-border-primary)] bg-[var(--color-bg-secondary)]/40 mb-6">
+              <span className="text-xs font-semibold text-[var(--color-text-tertiary)] uppercase tracking-wider">
+                AI Tools & Resources
+              </span>
+            </div>
+
+            <h1 className="text-display-hero mb-6">
+              <span className="text-gradient">AI-Powered</span> Tools for Product Managers
+            </h1>
+
+            <p className="text-body-enhanced max-w-3xl text-[var(--color-text-tertiary)] mb-8">
+              A collection of AI agents, prompts, and skills designed to enhance product management workflows.
+              Built with Claude Code to accelerate decision-making, strategic thinking, and execution.
+            </p>
+
+            <div className="flex flex-wrap gap-4">
+              <a href="#agents" className="btn-primary">
+                Explore Agents
+              </a>
+              <a href="#prompts" className="btn-secondary">
+                Browse Prompts
+              </a>
+            </div>
           </div>
-
-          <h1 className="text-display-hero mb-6">
-            <span className="text-gradient">AI-Powered</span> Tools for Product Managers
-          </h1>
-
-          <p className="text-body-enhanced max-w-3xl text-[var(--color-text-tertiary)] mb-8">
-            A collection of AI agents, prompts, and skills designed to enhance product management workflows.
-            Built with Claude Code to accelerate decision-making, strategic thinking, and execution.
-          </p>
-
-          <div className="flex flex-wrap gap-4">
-            <a href="#agents" className="btn-primary">
-              Explore Agents
-            </a>
-            <a href="#prompts" className="btn-secondary">
-              Browse Prompts
-            </a>
-          </div>
-        </div>
-      </section>
+        </FullWidthBackground.Content>
+      </FullWidthBackground>
 
       {/* AI Agents Section */}
       <section id="agents" className="py-16 sm:py-20">
