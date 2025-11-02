@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
+import { ThemeToggle } from "./ThemeToggle";
 
 const Nav = () => {
   const pathname = usePathname();
@@ -73,6 +74,7 @@ const Nav = () => {
                 : "opacity-0 scale-x-0 group-hover:opacity-50 group-hover:scale-x-100"
             }`}></span>
           </Link>
+          <ThemeToggle />
         </div>
       </div>
     </nav>
