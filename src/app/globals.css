@@ -61,17 +61,17 @@
     --font-sans: 'Geist Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     --font-mono: 'Geist Mono', 'Fira Code', 'Courier New', monospace;
 
-    /* Font Sizes - Fluid Typography */
-    --text-xs: clamp(0.75rem, 0.7rem + 0.25vw, 0.875rem);
-    --text-sm: clamp(0.875rem, 0.825rem + 0.25vw, 1rem);
-    --text-base: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
-    --text-lg: clamp(1.125rem, 1.05rem + 0.375vw, 1.25rem);
-    --text-xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
-    --text-2xl: clamp(1.5rem, 1.35rem + 0.75vw, 1.875rem);
-    --text-3xl: clamp(1.875rem, 1.65rem + 1.125vw, 2.25rem);
-    --text-4xl: clamp(2.25rem, 1.95rem + 1.5vw, 3rem);
-    --text-5xl: clamp(3rem, 2.5rem + 2.5vw, 4rem);
-    --text-6xl: clamp(3.75rem, 3rem + 3.75vw, 6rem);
+    /* Font Sizes - Fluid Typography (Scaled Down for Better Spacing) */
+    --text-xs: clamp(0.7rem, 0.65rem + 0.25vw, 0.8rem);
+    --text-sm: clamp(0.8rem, 0.75rem + 0.25vw, 0.9rem);
+    --text-base: clamp(0.9rem, 0.85rem + 0.25vw, 1rem);
+    --text-lg: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+    --text-xl: clamp(1.125rem, 1.05rem + 0.375vw, 1.25rem);
+    --text-2xl: clamp(1.25rem, 1.15rem + 0.5vw, 1.5rem);
+    --text-3xl: clamp(1.5rem, 1.35rem + 0.75vw, 1.875rem);
+    --text-4xl: clamp(1.875rem, 1.65rem + 1.125vw, 2.5rem);
+    --text-5xl: clamp(2.5rem, 2.1rem + 2vw, 3.5rem);
+    --text-6xl: clamp(3rem, 2.5rem + 2.5vw, 4.5rem);
 
     /* Spacing Scale */
     --space-0: 0;
@@ -132,6 +132,14 @@
   @media (prefers-reduced-motion: reduce) {
     html {
       scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
     }
   }
 
@@ -224,6 +232,26 @@
     line-height: 1.5;
     color: var(--color-text-body);
     letter-spacing: 0.01em;
+  }
+
+  /* Stat Card Styles - Enhanced for Impact */
+  .stat-number {
+    font-size: clamp(3rem, 2.2rem + 3.5vw, 4rem);
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+    margin-bottom: 0.75rem;
+    font-variant-numeric: tabular-nums;
+    text-shadow: 0 0 40px rgba(139, 92, 246, 0.4);
+  }
+
+  .stat-label {
+    font-size: var(--text-base);
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--color-text-secondary);
+    letter-spacing: 0.02em;
   }
 
   .text-caption {
@@ -498,6 +526,45 @@
     transform: translateY(-2px);
   }
 
+  /* Stat Card - Enhanced Visual Weight */
+  .stat-card {
+    background: rgba(24, 24, 31, 0.4);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    border: 2px solid rgba(139, 92, 246, 0.2);
+    border-radius: var(--radius-xl);
+    padding: 2.5rem 2rem;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--gradient-primary);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  .stat-card:hover::before {
+    opacity: 1;
+  }
+
+  .stat-card:hover {
+    background: rgba(30, 30, 46, 0.6);
+    border-color: rgba(139, 92, 246, 0.4);
+    box-shadow:
+      0 8px 32px rgba(139, 92, 246, 0.15),
+      0 0 0 1px rgba(139, 92, 246, 0.1) inset;
+    transform: translateY(-6px);
+  }
+
   /* Section - Reduced default padding */
   .section {
     padding: var(--space-16) 0;
@@ -511,11 +578,12 @@
     padding: var(--space-24) 0;
   }
 
-  /* Focus Styles */
+  /* Focus Styles - Enhanced for Accessibility */
   *:focus-visible {
-    outline: 2px solid var(--color-brand-primary);
-    outline-offset: 2px;
+    outline: 3px solid var(--color-brand-primary-light);
+    outline-offset: 3px;
     border-radius: var(--radius-sm);
+    box-shadow: 0 0 0 6px rgba(139, 92, 246, 0.2);
   }
 }
 
@@ -547,6 +615,16 @@
       opacity: 1;
       transform: translateY(0);
     }
+  }
+
+  /* Smooth Scroll Behavior */
+  .smooth-scroll {
+    scroll-behavior: smooth;
+  }
+
+  /* Text Shadow for Enhanced Contrast */
+  .text-shadow-glow {
+    text-shadow: 0 0 30px rgba(139, 92, 246, 0.5);
   }
 }
 

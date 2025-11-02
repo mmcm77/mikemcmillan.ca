@@ -1,6 +1,10 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
+import { Spotlight, GridBackground } from "@/components/ui/spotlight-new";
+import { motion } from "framer-motion";
 
 export default function Work() {
   const workData = [
@@ -368,13 +372,170 @@ export default function Work() {
 
   return (
     <main>
-      <section className="py-12 sm:py-16">
-        <div className="mb-12">
-          <h1 className="text-display-hero text-gradient mb-8">My work</h1>
-          <p className="text-body-large-enhanced mb-8 max-w-3xl">
-            On a mission to build beautiful, high-impact products that solve
-            real customer problems. Here&apos;s a timeline of my journey so far:
-          </p>
+      <section className="py-16 sm:py-20 relative">
+        <GridBackground />
+        <Spotlight
+          translateY={-400}
+          width={500}
+          height={1200}
+          duration={8}
+        />
+
+        <div className="relative z-10 mb-16">
+          {/* Enhanced Hero Typography */}
+          <div className="mb-12">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[var(--color-border-primary)] bg-[var(--color-bg-secondary)]/40 mb-6">
+              <span className="text-xs font-semibold text-[var(--color-text-tertiary)] uppercase tracking-wider">
+                Product Leadership Journey
+              </span>
+            </div>
+
+            <h1 className="text-display-hero mb-4">
+              Building products that <span className="text-gradient">drive revenue at scale</span>
+            </h1>
+
+            <p className="text-2xl sm:text-3xl font-semibold text-[var(--color-text-secondary)] mb-6 max-w-3xl">
+              From startup MVP to enterprise infrastructure
+            </p>
+
+            <p className="text-body-enhanced max-w-3xl text-[var(--color-text-tertiary)]">
+              10+ years building financial services, payments, and SaaS products across Africa,
+              North America, and global markets. Specialized in 0-to-1 product development,
+              open finance infrastructure, and strategic go-to-market execution.
+            </p>
+          </div>
+
+          {/* Journey Overview Bar */}
+          <div className="inline-flex flex-wrap items-center gap-4 sm:gap-6 py-4 px-6 rounded-full bg-[var(--color-bg-secondary)]/60 backdrop-blur-md border border-[var(--color-border-secondary)] mb-16">
+            <div className="flex items-center gap-2">
+              <span className="text-3xl sm:text-4xl font-bold text-white">10+</span>
+              <span className="text-xs sm:text-sm text-[var(--color-text-tertiary)] uppercase tracking-wide">Years</span>
+            </div>
+
+            <div className="w-px h-8 bg-[var(--color-border-secondary)]" />
+
+            <div className="flex items-center gap-2">
+              <span className="text-3xl sm:text-4xl font-bold text-white">7</span>
+              <span className="text-xs sm:text-sm text-[var(--color-text-tertiary)] uppercase tracking-wide">Companies</span>
+            </div>
+
+            <div className="w-px h-8 bg-[var(--color-border-secondary)]" />
+
+            <div className="flex items-center gap-2">
+              <span className="text-3xl sm:text-4xl font-bold text-white">3</span>
+              <span className="text-xs sm:text-sm text-[var(--color-text-tertiary)] uppercase tracking-wide">Exits</span>
+            </div>
+
+            <div className="w-px h-8 bg-[var(--color-border-secondary)]" />
+
+            <div className="flex items-center gap-2">
+              <span className="text-3xl sm:text-4xl font-bold text-[var(--color-brand-primary)]">100+</span>
+              <span className="text-xs sm:text-sm text-[var(--color-text-tertiary)] uppercase tracking-wide">Products</span>
+            </div>
+          </div>
+
+          {/* Featured Case Studies */}
+          <div className="mb-20">
+            <div className="flex items-center justify-between mb-6">
+              <h2 className="text-heading-section">Featured Work</h2>
+              <span className="text-xs sm:text-sm text-[var(--color-text-tertiary)] uppercase tracking-wide">
+                Case Studies
+              </span>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Okra Case Study */}
+              <motion.a
+                href="/work/okra"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 }}
+                className="glass-card-hover p-6 block group"
+              >
+                <div className="mb-4">
+                  <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-purple-400/10 border border-purple-400/30 mb-3">
+                    <span className="text-xs font-semibold text-purple-400 uppercase tracking-wide">
+                      Product Lead
+                    </span>
+                  </div>
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 group-hover:text-gradient transition-all">
+                    Okra.ng
+                  </h3>
+                  <p className="text-xs sm:text-sm text-[var(--color-text-secondary)] mb-4">
+                    Africa&apos;s leading open finance infrastructure
+                  </p>
+                </div>
+
+                {/* Quick Stats */}
+                <div className="grid grid-cols-3 gap-4 py-4 border-t border-[var(--color-border-secondary)]">
+                  <div>
+                    <div className="text-xl sm:text-2xl font-bold text-white">100+</div>
+                    <div className="text-xs text-[var(--color-text-tertiary)]">Products</div>
+                  </div>
+                  <div>
+                    <div className="text-xl sm:text-2xl font-bold text-white">3</div>
+                    <div className="text-xs text-[var(--color-text-tertiary)]">Countries</div>
+                  </div>
+                  <div>
+                    <div className="text-xl sm:text-2xl font-bold text-white">4</div>
+                    <div className="text-xs text-[var(--color-text-tertiary)]">Years</div>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-2 text-purple-400 font-medium text-xs sm:text-sm mt-4">
+                  Read Case Study
+                  <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </motion.a>
+
+              {/* Buildable Case Study */}
+              <motion.a
+                href="/work/buildable"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3 }}
+                className="glass-card-hover p-6 block group"
+              >
+                <div className="mb-4">
+                  <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-400/10 border border-blue-400/30 mb-3">
+                    <span className="text-xs font-semibold text-blue-400 uppercase tracking-wide">
+                      Series A
+                    </span>
+                  </div>
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 group-hover:text-gradient transition-all">
+                    Buildable.io
+                  </h3>
+                  <p className="text-xs sm:text-sm text-[var(--color-text-secondary)] mb-4">
+                    Low-code microservices platform (now IntegrationOS)
+                  </p>
+                </div>
+
+                <div className="grid grid-cols-3 gap-4 py-4 border-t border-[var(--color-border-secondary)]">
+                  <div>
+                    <div className="text-xl sm:text-2xl font-bold text-white">$3.7M</div>
+                    <div className="text-xs text-[var(--color-text-tertiary)]">Raised</div>
+                  </div>
+                  <div>
+                    <div className="text-xl sm:text-2xl font-bold text-white">20+</div>
+                    <div className="text-xs text-[var(--color-text-tertiary)]">Products</div>
+                  </div>
+                  <div>
+                    <div className="text-xl sm:text-2xl font-bold text-white">4</div>
+                    <div className="text-xs text-[var(--color-text-tertiary)]">Clients</div>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-2 text-blue-400 font-medium text-xs sm:text-sm mt-4">
+                  Read Case Study
+                  <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              </motion.a>
+            </div>
+          </div>
         </div>
       </section>
 
