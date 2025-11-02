@@ -9,24 +9,24 @@ import { GeistMono } from 'geist/font/mono';
 export const metadata: Metadata = {
   metadataBase: new URL('https://mikemcmillan.ca'),
   title: {
-    default: "Mike McMillan | AI Product Leader",
+    default: "Mike McMillan | Product Leader - AI-Powered Products",
     template: "%s | Mike McMillan"
   },
   description:
-    "AI Product Leader translating AI capabilities into products customers buy. Led AI product to acquisition, built ML infrastructure serving 100K+ users, raised $50M+ across AI-powered products.",
+    "Product leader with 10+ years building AI-powered products that drive revenue at scale. Led AI-powered product to acquisition, built ML infrastructure serving 100K+ users, raised $50M+ leveraging AI/ML across fintech and SaaS.",
   keywords: [
-    "AI product manager",
-    "AI product leader",
-    "AI product strategy",
-    "AI commercialization",
-    "AI product positioning",
+    "AI-powered products",
+    "product manager",
     "machine learning products",
-    "AI product translation",
-    "AI to market",
-    "AI product acquisition",
-    "ML product management",
-    "artificial intelligence products",
-    "AI product development"
+    "AI product development",
+    "ML infrastructure",
+    "product leadership",
+    "AI strategy",
+    "product management",
+    "fintech AI",
+    "SaaS products",
+    "AI acquisition",
+    "ML product strategy"
   ],
   authors: [{ name: "Mike McMillan" }],
   creator: "Mike McMillan",
@@ -34,24 +34,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://mikemcmillan.ca",
-    siteName: "Mike McMillan | AI Product Leader",
-    title: "Mike McMillan | AI Product Leader - Translating AI into Products Customers Buy",
+    siteName: "Mike McMillan | Product Leader",
+    title: "Mike McMillan | Product Leader - Building AI-Powered Products at Scale",
     description:
-      "AI Product Leader with 10+ years translating AI capabilities into revenue-generating products. Led AI product to acquisition, built ML infrastructure serving 100K+ users, raised $50M+ across AI-powered products.",
+      "Product leader with 10+ years building AI-powered products that drive revenue. Led AI-powered product to acquisition, built ML infrastructure serving 100K+ users, raised $50M+ across fintech and SaaS.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Mike McMillan - AI Product Leader Portfolio",
+        alt: "Mike McMillan - Product Leader Portfolio",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mike McMillan | AI Product Leader",
+    title: "Mike McMillan | Product Leader - AI-Powered Products",
     description:
-      "Translating AI capabilities into products customers buy. Led AI product to acquisition, built ML infrastructure at scale.",
+      "Building AI-powered products that drive revenue at scale. Led AI product to acquisition, built ML infrastructure serving 100K+ users.",
     images: ["/og-image.png"],
   },
   robots: {

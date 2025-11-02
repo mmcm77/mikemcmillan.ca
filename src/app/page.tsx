@@ -18,15 +18,16 @@ export default function Home() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--color-brand-primary)] opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--color-brand-primary)]"></span>
             </span>
-            <span className="text-xs font-semibold text-white">Available for AI Product Leadership roles</span>
+            <span className="text-xs font-semibold text-white">Available for new opportunities</span>
           </div>
           <h1 className="text-display-hero mb-6">
-            I translate <span className="text-gradient">AI capabilities into products</span> customers buy
+            I build <span className="text-gradient">AI-powered products</span> that drive revenue at scale
           </h1>
           <p className="text-body-enhanced max-w-2xl mb-10">
-            AI Product Leader with 10+ years bridging the gap between impressive technology and revenue-generating products.
-            I specialize in <span className="text-[var(--color-brand-primary)] font-semibold">AI product positioning</span>,
-            commercialization strategy, and translating complex capabilities into customer value that drives adoption and growth.
+            Product leader with 10+ years leveraging AI and machine learning to build products that scale.
+            I specialize in <span className="text-[var(--color-brand-primary)] font-semibold">AI-powered product development</span>,
+            from ML infrastructure serving 100K+ users to AI-enhanced consumer products leading to acquisition—turning
+            intelligent capabilities into revenue-generating products.
           </p>
           <div className="flex flex-wrap gap-8 text-xs sm:text-sm">
             <div className="flex items-center gap-2">
@@ -86,17 +87,20 @@ export default function Home() {
       <section className="py-16 sm:py-20">
         <div className="max-w-3xl mx-auto">
           <div className="card-hover p-8">
-            <h2 className="text-heading-section mb-6">The AI Product Translation Approach</h2>
+            <h2 className="text-heading-section mb-6">My Approach to AI-Powered Products</h2>
             <p className="text-body-enhanced mb-6">
-              Most AI products fail because teams confuse impressive technology with compelling products.
-              I bridge this gap by translating AI capabilities into products customers understand, trust, and buy.
+              I leverage AI and machine learning to build products that deliver measurable value—not
+              AI for novelty, but intelligent capabilities that solve real problems and drive revenue.
+              From ML-powered fintech infrastructure to AI-enhanced consumer products, I focus on
+              practical applications that scale.
             </p>
             <p className="text-body-enhanced">
-              My approach combines deep technical understanding with commercial acumen—working alongside
-              ML engineers to understand capabilities, then positioning them as solutions to real customer problems.
-              From AI-powered fintech infrastructure serving 100K+ users to consumer AI products leading to acquisition,
-              I turn complex AI capabilities into revenue-generating products through strategic positioning,
-              trust-building design, and go-to-market execution that drives adoption.
+              My approach combines deep technical collaboration with commercial execution. I work closely
+              with engineering teams to understand what's possible with AI/ML, then translate those capabilities
+              into product features that customers understand and value. Whether it's building fraud detection
+              systems, recommendation engines, or intelligent automation—I turn AI capabilities into
+              competitive advantages through strategic product thinking, rigorous experimentation, and
+              go-to-market execution that drives adoption and revenue.
             </p>
           </div>
         </div>

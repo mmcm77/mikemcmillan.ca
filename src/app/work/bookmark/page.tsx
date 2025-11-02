@@ -3,9 +3,9 @@ import React from "react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "How AI Positioning Led to Acquisition: The Bookmark Story | Mike McMillan",
+  title: "Building an AI-Powered Product to Acquisition: Bookmark Case Study | Mike McMillan",
   description:
-    "How I translated AIDA AI capabilities into market differentiation as Head of Product at Bookmark, reducing website creation time by 33x and driving strategic acquisition by Moneris.",
+    "How I scaled AIDA, an AI-powered website builder, from MVP to acquisition as Head of Product at Bookmark—reducing website creation time by 33x (from 4.5 hours to 8 minutes) and driving strategic acquisition by Moneris.",
 };
 
 export default function BookmarkCaseStudy() {
@@ -25,16 +25,16 @@ export default function BookmarkCaseStudy() {
       <section className="pt-8 pb-16 sm:pt-12 sm:pb-20">
         <div className="mb-8">
           <div className="text-[var(--color-accent-blue)] text-sm font-semibold mb-4 tracking-wide uppercase">
-            AI Product Translation Case Study
+            AI-Powered Product Case Study
           </div>
           <h1 className="text-display-hero text-gradient mb-6">
-            How AI Positioning Led to Our Acquisition
+            Building an AI-Powered Product to Acquisition
           </h1>
           <p className="text-body-large-enhanced max-w-3xl mb-8">
-            As Head of Product at Bookmark.com, I translated our AIDA AI capabilities into
-            market-differentiating positioning that customers understood and trusted. By focusing
-            on the value AI delivered—reducing website creation from 4.5 hours to 8 minutes—rather
-            than the technology itself, we carved out a unique position in a crowded market and drove{" "}
+            As Head of Product at Bookmark.com, I scaled AIDA (our AI-powered website builder) from
+            MVP to strategic acquisition by focusing on the value AI delivered—reducing website creation
+            from 4.5 hours to 8 minutes. By leveraging AI to solve real customer problems rather than
+            showcasing technology for its own sake, we carved out a unique position in a crowded market and drove{" "}
             <Link
               href="https://markets.businessinsider.com/news/stocks/moneris-invests-and-partners-with-bookmark-to-deliver-online-business-solutions-for-canadian-small-businesses-1028828832"
               className="link-primary"
@@ -101,44 +101,44 @@ export default function BookmarkCaseStudy() {
       {/* The Challenge */}
       <section className="py-16 sm:py-20">
         <div className="max-w-4xl">
-          <h2 className="text-heading-section mb-8">The AI Product Translation Challenge</h2>
+          <h2 className="text-heading-section mb-8">The Challenge</h2>
 
           <div className="space-y-6">
             <div className="card-hover p-8">
               <h3 className="text-heading-4 mb-4 text-gradient">
-                Translating AI Capabilities into Market Differentiation
+                Leveraging AI for Competitive Differentiation
               </h3>
               <p className="text-body-enhanced mb-4">
-                AIDA had impressive technical capabilities—using machine learning to analyze business
-                information and automatically generate custom website designs. But impressive technology
-                doesn't equal product success. I needed to translate these AI capabilities into positioning
-                and features that customers would understand, trust, and pay for:
+                AIDA was our technical edge—using machine learning to analyze business information and
+                automatically generate custom website designs. But building impressive AI capabilities isn't
+                enough. I needed to turn these capabilities into product features that delivered clear value,
+                built user trust, and drove commercial success:
               </p>
               <ul className="space-y-3">
                 <li className="flex gap-3 items-start text-body-enhanced">
                   <span className="text-[var(--color-accent-blue)] mt-1">•</span>
-                  <span><strong>Capability → Value Translation:</strong> "AI design assistant" meant nothing
-                  to SMB owners. I needed to translate this into "8-minute website creation" vs. 4.5 hours manually</span>
+                  <span><strong>Focus on Outcomes, Not Technology:</strong> SMB owners didn't care about "machine learning"—they
+                  cared that AIDA reduced website creation from 4.5 hours to 8 minutes</span>
                 </li>
                 <li className="flex gap-3 items-start text-body-enhanced">
                   <span className="text-[var(--color-accent-blue)] mt-1">•</span>
-                  <span><strong>Build Trust in AI:</strong> Small business owners were skeptical of "AI-generated"
-                  designs. I needed to position AI as assistance, not replacement—helping them express their vision</span>
+                  <span><strong>Build Trust Through Design:</strong> Users were skeptical of fully automated design.
+                  I positioned AIDA as intelligent assistance, not replacement—helping them express their vision faster</span>
                 </li>
                 <li className="flex gap-3 items-start text-body-enhanced">
                   <span className="text-[var(--color-accent-blue)] mt-1">•</span>
-                  <span><strong>AI as Differentiation:</strong> In a market dominated by Wix, Squarespace, and WordPress,
-                  AI wasn't just a feature—it was our positioning wedge that needed clear articulation</span>
+                  <span><strong>AI as Strategic Wedge:</strong> In a market dominated by Wix, Squarespace, and WordPress,
+                  AI-powered speed was our differentiation—but needed clear articulation and proof</span>
                 </li>
                 <li className="flex gap-3 items-start text-body-enhanced">
                   <span className="text-[var(--color-accent-blue)] mt-1">•</span>
-                  <span><strong>Make AI Tangible:</strong> Demonstrate the value of AI through concrete metrics and user
-                  outcomes, not technical jargon about ML models and training data</span>
+                  <span><strong>Demonstrate Value with Metrics:</strong> Show the impact of AI through concrete time savings
+                  and quality improvements, not technical details about ML models</span>
                 </li>
                 <li className="flex gap-3 items-start text-body-enhanced">
                   <span className="text-[var(--color-accent-blue)] mt-1">•</span>
-                  <span><strong>Commercial Validation:</strong> Prove to acquirers that AI positioning drove sustainable
-                  CAC/LTV economics and market differentiation, not just technical novelty</span>
+                  <span><strong>Commercial Validation:</strong> Prove that AI-powered differentiation drove sustainable
+                  unit economics and strategic value, not just technical innovation</span>
                 </li>
               </ul>
             </div>
@@ -146,10 +146,10 @@ export default function BookmarkCaseStudy() {
             <div className="card-hover p-8">
               <h3 className="text-heading-4 mb-4">The Core Product Question</h3>
               <p className="text-body-enhanced">
-                How do we translate AIDA's AI capabilities into positioning that small business owners
-                understand and trust, deliver measurable time-to-value that justifies AI differentiation,
-                and create commercial traction that demonstrates acquisition-worthy strategic value—all
-                while competing against companies with 10x our resources and established market presence?
+                How do we leverage AIDA's AI capabilities to create a website builder that delivers measurable
+                value to customers, builds trust through intelligent automation, and differentiates us in a
+                crowded market enough to drive strategic acquisition—all while competing against companies
+                with 10x our resources and established market presence?
               </p>
             </div>
           </div>
