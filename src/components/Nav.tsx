@@ -74,6 +74,23 @@ const Nav = () => {
                 : "opacity-0 scale-x-0 group-hover:opacity-50 group-hover:scale-x-100"
             }`}></span>
           </Link>
+          <Link
+            href="/ai-tools"
+            className="group relative py-2 font-medium text-xs sm:text-sm transition-colors duration-200"
+          >
+            <span className={`transition-colors duration-200 ${
+              isActive("/ai-tools")
+                ? "text-[var(--color-text-primary)]"
+                : "text-[var(--color-text-secondary)] group-hover:text-[var(--color-text-primary)]"
+            }`}>
+              AI Tools
+            </span>
+            <span className={`absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-[var(--color-brand-primary)] to-[var(--color-accent-blue)] transition-all duration-300 ${
+              isActive("/ai-tools")
+                ? "opacity-100 scale-x-100"
+                : "opacity-0 scale-x-0 group-hover:opacity-50 group-hover:scale-x-100"
+            }`}></span>
+          </Link>
           <ThemeToggle />
         </div>
       </div>
