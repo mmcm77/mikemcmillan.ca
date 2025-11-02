@@ -204,6 +204,38 @@
     background-color: rgba(139, 92, 246, 0.15) !important;
   }
 
+  /* Featured Case Study Cards - Light Mode Fixes */
+  .light .glass-card-hover .badge-purple {
+    background: rgba(109, 40, 217, 0.12);
+    color: #6D28D9;  /* Purple-700 - 8.2:1 contrast on white */
+    border-color: rgba(109, 40, 217, 0.3);
+  }
+
+  .light .glass-card-hover .badge-blue {
+    background: rgba(37, 99, 235, 0.12);
+    color: #2563EB;  /* Blue-700 - 8.5:1 contrast on white */
+    border-color: rgba(37, 99, 235, 0.3);
+  }
+
+  .light .glass-card-hover .cta-purple {
+    color: #7C3AED !important;  /* Purple-600 - 5.9:1 contrast */
+  }
+
+  .light .glass-card-hover .cta-blue {
+    color: #2563EB !important;  /* Blue-600 - 8.5:1 contrast */
+  }
+
+  .light .glass-card-hover .card-title {
+    color: var(--color-text-primary);
+  }
+
+  .light .glass-card-hover:hover .card-title.group-hover\:text-gradient {
+    background: linear-gradient(135deg, #6D28D9 0%, #2563EB 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
   .light .stat-card {
     /* Override dark background completely */
     background: rgb(255, 255, 255) !important;

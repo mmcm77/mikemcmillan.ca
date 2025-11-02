@@ -453,12 +453,12 @@ export default function Work() {
                 className="glass-card-hover p-6 block group"
               >
                 <div className="mb-4">
-                  <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-purple-400/10 border border-purple-400/30 mb-3">
-                    <span className="text-xs font-semibold text-purple-400 uppercase tracking-wide">
+                  <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-purple-400/10 border border-purple-400/30 mb-3 badge-purple">
+                    <span className="text-xs font-semibold uppercase tracking-wide">
                       Product Lead
                     </span>
                   </div>
-                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 group-hover:text-gradient transition-all">
+                  <h3 className="text-xl sm:text-2xl font-bold text-[var(--color-text-primary)] mb-2 card-title group-hover:text-gradient transition-all">
                     Okra.ng
                   </h3>
                   <p className="text-xs sm:text-sm text-[var(--color-text-secondary)] mb-4">
@@ -469,20 +469,20 @@ export default function Work() {
                 {/* Quick Stats */}
                 <div className="grid grid-cols-3 gap-4 py-4 border-t border-[var(--color-border-secondary)]">
                   <div>
-                    <div className="text-xl sm:text-2xl font-bold text-white">100+</div>
+                    <div className="text-xl sm:text-2xl font-bold text-[var(--color-text-primary)]">100+</div>
                     <div className="text-xs text-[var(--color-text-tertiary)]">Products</div>
                   </div>
                   <div>
-                    <div className="text-xl sm:text-2xl font-bold text-white">3</div>
+                    <div className="text-xl sm:text-2xl font-bold text-[var(--color-text-primary)]">3</div>
                     <div className="text-xs text-[var(--color-text-tertiary)]">Countries</div>
                   </div>
                   <div>
-                    <div className="text-xl sm:text-2xl font-bold text-white">4</div>
+                    <div className="text-xl sm:text-2xl font-bold text-[var(--color-text-primary)]">4</div>
                     <div className="text-xs text-[var(--color-text-tertiary)]">Years</div>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-2 text-purple-400 font-medium text-xs sm:text-sm mt-4">
+                <div className="flex items-center gap-2 text-purple-400 cta-purple font-medium text-xs sm:text-sm mt-4">
                   Read Case Study
                   <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
@@ -499,12 +499,12 @@ export default function Work() {
                 className="glass-card-hover p-6 block group"
               >
                 <div className="mb-4">
-                  <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-400/10 border border-blue-400/30 mb-3">
-                    <span className="text-xs font-semibold text-blue-400 uppercase tracking-wide">
+                  <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-400/10 border border-blue-400/30 mb-3 badge-blue">
+                    <span className="text-xs font-semibold uppercase tracking-wide">
                       Series A
                     </span>
                   </div>
-                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-2 group-hover:text-gradient transition-all">
+                  <h3 className="text-xl sm:text-2xl font-bold text-[var(--color-text-primary)] mb-2 card-title group-hover:text-gradient transition-all">
                     Buildable.io
                   </h3>
                   <p className="text-xs sm:text-sm text-[var(--color-text-secondary)] mb-4">
@@ -514,20 +514,20 @@ export default function Work() {
 
                 <div className="grid grid-cols-3 gap-4 py-4 border-t border-[var(--color-border-secondary)]">
                   <div>
-                    <div className="text-xl sm:text-2xl font-bold text-white">$3.7M</div>
+                    <div className="text-xl sm:text-2xl font-bold text-[var(--color-text-primary)]">$3.7M</div>
                     <div className="text-xs text-[var(--color-text-tertiary)]">Raised</div>
                   </div>
                   <div>
-                    <div className="text-xl sm:text-2xl font-bold text-white">20+</div>
+                    <div className="text-xl sm:text-2xl font-bold text-[var(--color-text-primary)]">20+</div>
                     <div className="text-xs text-[var(--color-text-tertiary)]">Products</div>
                   </div>
                   <div>
-                    <div className="text-xl sm:text-2xl font-bold text-white">4</div>
+                    <div className="text-xl sm:text-2xl font-bold text-[var(--color-text-primary)]">4</div>
                     <div className="text-xs text-[var(--color-text-tertiary)]">Clients</div>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-2 text-blue-400 font-medium text-xs sm:text-sm mt-4">
+                <div className="flex items-center gap-2 text-blue-400 cta-blue font-medium text-xs sm:text-sm mt-4">
                   Read Case Study
                   <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
