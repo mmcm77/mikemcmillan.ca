@@ -13,13 +13,6 @@ export default function Home() {
         <GridBackground />
         <Spotlight />
         <div className="relative z-10 mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-[var(--color-brand-primary)]/15 border-2 border-[var(--color-brand-primary)]/35 mb-8">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[var(--color-brand-primary)] opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-[var(--color-brand-primary)]"></span>
-            </span>
-            <span className="text-xs font-semibold text-white">Available for new opportunities</span>
-          </div>
           <h1 className="text-display-hero mb-6">
             I build <span className="text-gradient">AI-powered products</span> that drive revenue at scale
           </h1>
