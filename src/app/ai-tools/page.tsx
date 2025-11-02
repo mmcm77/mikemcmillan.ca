@@ -1,7 +1,9 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { Spotlight, GridBackground } from "@/components/ui/spotlight-new";
+import CopyButton from "@/components/CopyButton";
 
 export default function AITools() {
   const agents = [
@@ -10,7 +12,8 @@ export default function AITools() {
       category: "Strategy",
       description: "Helps with strategic product thinking, feature planning, and prioritization decisions. Use proactively when making product decisions.",
       useCases: ["Feature Planning", "Requirement Refinement", "Prioritization", "Metrics Definition"],
-      color: "purple"
+      color: "purple",
+      slug: "product-strategy-advisor"
     },
     {
       name: "Component Architect",
@@ -54,28 +57,195 @@ export default function AITools() {
       title: "Case Study Analysis",
       category: "Product Management",
       description: "Analyze a product experience and create a compelling PM case study with metrics, outcomes, and learnings.",
-      preview: "Analyze [product/feature] and create a PM case study focusing on...",
+      preview: "Analyze [product/feature] and create a PM case study...",
+      fullPrompt: `Analyze my work on [PRODUCT/FEATURE NAME] and help me create a compelling product management case study.
+
+Context:
+- Product: [Brief description]
+- My Role: [Your role and responsibilities]
+- Timeline: [Duration]
+- Team Size: [Number of people]
+
+Please structure the case study with:
+
+1. **Challenge**: What problem were we solving? What was the business context?
+
+2. **Approach**:
+   - How did I approach the problem?
+   - What frameworks or methodologies did I use?
+   - How did I collaborate with stakeholders?
+
+3. **Execution**:
+   - Key decisions and trade-offs
+   - How did I prioritize competing needs?
+   - What obstacles did we overcome?
+
+4. **Impact & Metrics**:
+   - Quantitative results (revenue, adoption, engagement, etc.)
+   - Qualitative outcomes (user feedback, team learnings)
+   - Business impact
+
+5. **Key Learnings**:
+   - What worked well?
+   - What would I do differently?
+   - Transferable insights
+
+Focus on demonstrating strategic thinking, data-driven decision making, and measurable outcomes. Use the STAR method (Situation, Task, Action, Result) where appropriate.`,
       color: "purple"
     },
     {
       title: "Feature Prioritization Framework",
       category: "Strategy",
       description: "Evaluate and prioritize features using RICE, impact/effort matrix, or custom frameworks.",
-      preview: "Help me prioritize these features using the RICE framework...",
+      preview: "Help me prioritize these features using RICE...",
+      fullPrompt: `Help me prioritize the following features using the RICE framework (Reach, Impact, Confidence, Effort).
+
+Features to prioritize:
+1. [Feature Name]: [Brief description]
+2. [Feature Name]: [Brief description]
+3. [Feature Name]: [Brief description]
+
+Context:
+- Product: [Product name and type]
+- Target Users: [User segment]
+- Current Goals: [Quarterly/annual goals]
+- Team Size: [Engineering capacity]
+- Timeline: [Planning horizon]
+
+For each feature, please evaluate:
+
+**Reach**: How many users will this impact per quarter?
+- Consider: Active user base, adoption rate, frequency of use
+
+**Impact**: How much will this feature impact users?
+- Score: 3 (massive), 2 (high), 1 (medium), 0.5 (low), 0.25 (minimal)
+- Consider: Value to users, problem severity, competitive advantage
+
+**Confidence**: How confident are we in these estimates?
+- Score: 100% (high data), 80% (medium data), 50% (low data)
+- Consider: Research quality, past experience, market validation
+
+**Effort**: How many person-months will this take?
+- Consider: Engineering, design, PM time, dependencies, technical complexity
+
+Provide:
+1. RICE score for each feature (Reach × Impact × Confidence / Effort)
+2. Ranked priority list
+3. Recommendation for which features to pursue in which order
+4. Key assumptions and risks for each
+5. Dependencies or prerequisites`,
       color: "blue"
     },
     {
       title: "User Story Generator",
       category: "Requirements",
       description: "Generate well-structured user stories with acceptance criteria from feature descriptions.",
-      preview: "Create user stories for [feature] including acceptance criteria...",
+      preview: "Create user stories for [feature]...",
+      fullPrompt: `Create detailed user stories with acceptance criteria for the following feature:
+
+Feature: [Feature name and brief description]
+
+Context:
+- User Persona: [Who is this for?]
+- Problem: [What problem does this solve?]
+- Success Criteria: [How will we measure success?]
+
+For each user story, provide:
+
+**User Story Format**:
+As a [type of user],
+I want to [action],
+So that [benefit/value].
+
+**Acceptance Criteria** (Given/When/Then format):
+- Given [precondition]
+  When [action]
+  Then [expected result]
+
+**Additional Details**:
+- Edge cases to consider
+- Non-functional requirements (performance, security, accessibility)
+- Dependencies on other stories
+- Technical considerations
+- UX/UI notes
+
+**Story Points Estimate**: [Relative sizing]
+
+**Priority**: [Must-have / Should-have / Nice-to-have]
+
+Please create comprehensive user stories that cover:
+1. Happy path scenarios
+2. Edge cases and error handling
+3. Different user roles/permissions (if applicable)
+4. Mobile and desktop experiences (if applicable)
+5. Accessibility requirements
+
+Ensure acceptance criteria are:
+- Testable and measurable
+- Clear and unambiguous
+- Focused on user outcomes, not implementation
+- Complete (covers all scenarios)`,
       color: "green"
     },
     {
       title: "Component Architecture Review",
       category: "Development",
       description: "Review React component architecture, suggest improvements, and identify refactoring opportunities.",
-      preview: "Review this component structure and suggest architectural improvements...",
+      preview: "Review this component structure...",
+      fullPrompt: `Review the following React component architecture and provide recommendations for improvement.
+
+Component: [Component name]
+
+Current Structure:
+\`\`\`tsx
+[Paste your component code here]
+\`\`\`
+
+Context:
+- Framework: [Next.js, React, etc.]
+- State Management: [Redux, Context, Zustand, etc.]
+- Styling: [Tailwind, CSS Modules, styled-components, etc.]
+- Component Usage: [Where and how often is it used?]
+
+Please analyze:
+
+**1. Architecture & Structure**
+- Component organization and hierarchy
+- Separation of concerns
+- Single Responsibility Principle adherence
+- Reusability and composability
+
+**2. State Management**
+- Is state properly scoped (local vs global)?
+- Are state updates optimized?
+- Prop drilling issues?
+- Unnecessary re-renders?
+
+**3. Performance**
+- Rendering optimization opportunities (memo, useMemo, useCallback)
+- Code splitting opportunities
+- Lazy loading potential
+- Bundle size considerations
+
+**4. Code Quality**
+- TypeScript usage and type safety
+- Error handling
+- Loading and edge case handling
+- Accessibility (a11y) compliance
+
+**5. Best Practices**
+- React hooks usage
+- Component patterns (compound components, render props, etc.)
+- Testing considerations
+- Documentation needs
+
+**6. Refactoring Recommendations**
+- Immediate improvements (quick wins)
+- Strategic refactoring (larger changes)
+- Breaking changes to consider
+- Migration strategy if needed
+
+Provide specific code examples for recommended changes.`,
       color: "orange"
     }
   ];
@@ -179,42 +349,66 @@ export default function AITools() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {agents.map((agent, index) => (
-            <div
-              key={index}
-              className={`glass-card-hover p-6 ${colorMap[agent.color as keyof typeof colorMap].card} transition-all duration-300`}
-            >
-              <div className="mb-4">
-                <div className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full border mb-3 ${colorMap[agent.color as keyof typeof colorMap].badge}`}>
-                  <span className="text-xs font-semibold uppercase tracking-wide">
-                    {agent.category}
-                  </span>
-                </div>
-                <h3 className="text-xl font-bold text-[var(--color-text-primary)] mb-2">
-                  {agent.name}
-                </h3>
-                <p className="text-sm text-[var(--color-text-secondary)] mb-4">
-                  {agent.description}
-                </p>
-              </div>
-
-              <div className="mb-4">
-                <h4 className="text-xs font-semibold text-[var(--color-text-tertiary)] uppercase tracking-wide mb-2">
-                  Use Cases
-                </h4>
-                <div className="flex flex-wrap gap-2">
-                  {agent.useCases.map((useCase, i) => (
-                    <span
-                      key={i}
-                      className={`text-xs px-2 py-1 rounded-full border ${colorMap[agent.color as keyof typeof colorMap].tag}`}
-                    >
-                      {useCase}
+          {agents.map((agent, index) => {
+            const CardContent = (
+              <>
+                <div className="mb-4">
+                  <div className={`inline-flex items-center gap-2 px-3 py-1.5 rounded-full border mb-3 ${colorMap[agent.color as keyof typeof colorMap].badge}`}>
+                    <span className="text-xs font-semibold uppercase tracking-wide">
+                      {agent.category}
                     </span>
-                  ))}
+                  </div>
+                  <h3 className="text-xl font-bold text-[var(--color-text-primary)] mb-2">
+                    {agent.name}
+                  </h3>
+                  <p className="text-sm text-[var(--color-text-secondary)] mb-4">
+                    {agent.description}
+                  </p>
                 </div>
+
+                <div className="mb-4">
+                  <h4 className="text-xs font-semibold text-[var(--color-text-tertiary)] uppercase tracking-wide mb-2">
+                    Use Cases
+                  </h4>
+                  <div className="flex flex-wrap gap-2">
+                    {agent.useCases.map((useCase, i) => (
+                      <span
+                        key={i}
+                        className={`text-xs px-2 py-1 rounded-full border ${colorMap[agent.color as keyof typeof colorMap].tag}`}
+                      >
+                        {useCase}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {agent.slug && (
+                  <div className="mt-4 pt-4 border-t border-[var(--color-border-secondary)]">
+                    <span className={`text-xs font-semibold ${colorMap[agent.color as keyof typeof colorMap].badge.includes('purple') ? 'text-purple-400' : colorMap[agent.color as keyof typeof colorMap].badge.includes('blue') ? 'text-blue-400' : 'text-[var(--color-brand-primary)]'}`}>
+                      View Details →
+                    </span>
+                  </div>
+                )}
+              </>
+            );
+
+            return agent.slug ? (
+              <Link
+                key={index}
+                href={`/ai-tools/agents/${agent.slug}`}
+                className={`glass-card-hover p-6 block ${colorMap[agent.color as keyof typeof colorMap].card} transition-all duration-300`}
+              >
+                {CardContent}
+              </Link>
+            ) : (
+              <div
+                key={index}
+                className={`glass-card-hover p-6 ${colorMap[agent.color as keyof typeof colorMap].card} transition-all duration-300`}
+              >
+                {CardContent}
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 
@@ -249,9 +443,16 @@ export default function AITools() {
               </div>
 
               <div className="bg-[var(--color-bg-secondary)]/40 border border-[var(--color-border-secondary)] rounded-lg p-3">
-                <code className="text-xs text-[var(--color-text-tertiary)] font-mono">
-                  {prompt.preview}
-                </code>
+                <div className="flex items-start justify-between gap-3">
+                  <code className="text-xs text-[var(--color-text-tertiary)] font-mono flex-1">
+                    {prompt.preview}
+                  </code>
+                  <CopyButton
+                    text={prompt.fullPrompt}
+                    size="sm"
+                    className="shrink-0"
+                  />
+                </div>
               </div>
             </div>
           ))}
