@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import CaseArtifact from "@/components/CaseArtifact";
+import CaseStudyNav from "@/components/CaseStudyNav";
 
 const monerisAnnouncement =
   "https://markets.businessinsider.com/news/stocks/moneris-invests-and-partners-with-bookmark-to-deliver-online-business-solutions-for-canadian-small-businesses-1028828832";
@@ -40,6 +42,16 @@ export default function BookmarkCaseStudy() {
           </div>
         </dl>
       </header>
+
+      <CaseStudyNav
+        items={[
+          { href: "#bookmark-context", label: "Context" },
+          { href: "#bookmark-decisions", label: "Decisions" },
+          { href: "#bookmark-system", label: "Journey" },
+          { href: "#bookmark-outcomes", label: "Outcomes" },
+          { href: "#bookmark-retrospective", label: "Reflection" },
+        ]}
+      />
 
       <section className="case-section" aria-labelledby="bookmark-context">
         <p className="case-section-label">Context</p>
@@ -110,6 +122,34 @@ export default function BookmarkCaseStudy() {
             </p>
           </div>
         </div>
+        <CaseArtifact
+          id="bookmark-system"
+          title="From blank canvas to owned result"
+          description="The product focused automation on the moments where small-business owners felt the most uncertainty."
+          steps={[
+            {
+              label: "Intent",
+              title: "Describe the business",
+              detail: "A short brief replaces the intimidating first decision and gives the system meaningful constraints.",
+            },
+            {
+              label: "Acceleration",
+              title: "Generate a credible draft",
+              detail: "AIDA turns the brief into a structured website customers can react to instead of starting from zero.",
+            },
+            {
+              label: "Trust",
+              title: "Edit and preview",
+              detail: "Owner controls preserve authorship while suggestions remove repetitive design and content work.",
+            },
+            {
+              label: "Value",
+              title: "Publish when ready",
+              detail: "Freemium evaluation delays payment until the customer can see and believe in the outcome.",
+            },
+          ]}
+          caption="Automation reduces uncertainty step by step; control stays with the customer until value is visible. This is a simplified reconstruction of the activation journey."
+        />
       </section>
 
       <section className="case-section" aria-labelledby="bookmark-execution">

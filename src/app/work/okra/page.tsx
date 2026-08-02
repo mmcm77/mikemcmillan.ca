@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import CaseArtifact from "@/components/CaseArtifact";
+import CaseStudyNav from "@/components/CaseStudyNav";
 
 export const metadata: Metadata = {
   title: "Okra: Building Open Finance Infrastructure | Mike McMillan",
@@ -38,6 +40,16 @@ export default function OkraCaseStudy() {
           </div>
         </dl>
       </header>
+
+      <CaseStudyNav
+        items={[
+          { href: "#okra-context", label: "Context" },
+          { href: "#okra-decisions", label: "Decisions" },
+          { href: "#okra-system", label: "System" },
+          { href: "#okra-outcomes", label: "Outcomes" },
+          { href: "#okra-retrospective", label: "Reflection" },
+        ]}
+      />
 
       <section className="case-section" aria-labelledby="okra-context">
         <p className="case-section-label">Context</p>
@@ -108,6 +120,34 @@ export default function OkraCaseStudy() {
             </p>
           </div>
         </div>
+        <CaseArtifact
+          id="okra-system"
+          title="A platform designed to compound"
+          description="The architecture and go-to-market model shared one principle: standardize the core, then adapt at the edges."
+          steps={[
+            {
+              label: "Foundation",
+              title: "Connect fragmented rails",
+              detail: "Normalize bank authentication, financial data, and payment connectivity behind consistent primitives.",
+            },
+            {
+              label: "Capabilities",
+              title: "Compose customer outcomes",
+              detail: "Combine data, identity, analysis, and payments without coupling every use case to one release.",
+            },
+            {
+              label: "Distribution",
+              title: "Let developers evaluate",
+              detail: "Documentation, SDKs, sandbox data, and self-service onboarding turn product experience into acquisition.",
+            },
+            {
+              label: "Expansion",
+              title: "Adapt market by market",
+              detail: "Reuse the platform while localizing integrations, regulation, and payment behavior for each country.",
+            },
+          ]}
+          caption="Each layer creates leverage for the next. The reconstruction simplifies a multi-year platform into the four decisions that made regional expansion repeatable."
+        />
       </section>
 
       <section className="case-section" aria-labelledby="okra-execution">

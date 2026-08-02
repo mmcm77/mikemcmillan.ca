@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import CaseArtifact from "@/components/CaseArtifact";
+import CaseStudyNav from "@/components/CaseStudyNav";
 
 export const metadata: Metadata = {
   title: "Buildable: From Agency Work to Product Platform | Mike McMillan",
@@ -37,6 +39,16 @@ export default function BuildableCaseStudy() {
           </div>
         </dl>
       </header>
+
+      <CaseStudyNav
+        items={[
+          { href: "#buildable-context", label: "Context" },
+          { href: "#buildable-decisions", label: "Decisions" },
+          { href: "#buildable-system", label: "Learning loop" },
+          { href: "#buildable-outcomes", label: "Outcomes" },
+          { href: "#buildable-retrospective", label: "Reflection" },
+        ]}
+      />
 
       <section className="case-section" aria-labelledby="buildable-context">
         <p className="case-section-label">Context</p>
@@ -106,6 +118,35 @@ export default function BuildableCaseStudy() {
             </p>
           </div>
         </div>
+        <CaseArtifact
+          id="buildable-system"
+          title="A pivot earned through evidence"
+          description="Instead of separating agency and product work, the operating model turned delivery into a continuous source of validated product signals."
+          steps={[
+            {
+              label: "Observe",
+              title: "Mine recurring client work",
+              detail: "Compare repeated integration needs across more than 20 projects rather than generalizing from one request.",
+            },
+            {
+              label: "Package",
+              title: "Extract one reusable service",
+              detail: "Turn the clearest pattern into an independent capability with a narrow adoption path.",
+            },
+            {
+              label: "Validate",
+              title: "Return to real workloads",
+              detail: "Design partners test whether the service survives beyond the implementation that inspired it.",
+            },
+            {
+              label: "Invest",
+              title: "Shift capacity with demand",
+              detail: "Usage and commercial evidence earn the next movement from client delivery toward platform work.",
+            },
+          ]}
+          caption="The loop reduces risk at each turn: service work supplies evidence, product reuse tests it, and validated demand funds the next product investment."
+          loop
+        />
       </section>
 
       <section className="case-section" aria-labelledby="buildable-execution">

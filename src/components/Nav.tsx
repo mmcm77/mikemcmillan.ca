@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const navigation = [
   { href: "/work", label: "Work" },
@@ -8,6 +11,13 @@ const navigation = [
 ];
 
 export default function Nav() {
+  const pathname = usePathname();
+
+  const isCurrent = (href: string) => {
+    if (href === "/#contact") return false;
+    return pathname === href || pathname.startsWith(`${href}/`);
+  };
+
   return (
     <header className="site-header">
       <nav className="site-nav" aria-label="Primary navigation">
@@ -18,7 +28,11 @@ export default function Nav() {
 
         <div className="desktop-nav" aria-label="Primary links">
           {navigation.map((item) => (
-            <Link key={item.href} href={item.href}>
+            <Link
+              key={item.href}
+              href={item.href}
+              aria-current={isCurrent(item.href) ? "page" : undefined}
+            >
               {item.label}
             </Link>
           ))}
@@ -28,7 +42,11 @@ export default function Nav() {
           <summary>Menu</summary>
           <div className="mobile-nav-panel">
             {navigation.map((item) => (
-              <Link key={item.href} href={item.href}>
+              <Link
+                key={item.href}
+                href={item.href}
+                aria-current={isCurrent(item.href) ? "page" : undefined}
+              >
                 {item.label}
               </Link>
             ))}

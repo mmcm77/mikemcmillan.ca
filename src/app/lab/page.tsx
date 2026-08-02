@@ -60,7 +60,7 @@ export default function LabPage() {
     <div className="section-shell min-h-screen text-[var(--color-text-primary)]">
       <header className="border-b border-[var(--color-border-secondary)] pb-14 pt-16 sm:pb-20 sm:pt-24 lg:grid lg:grid-cols-12 lg:gap-10 lg:pb-24 lg:pt-28">
         <div className="lg:col-span-8">
-          <p className="mb-5 font-mono text-[0.72rem] font-medium uppercase tracking-[0.2em] text-[#2457d6] dark:text-[#7da7ff]">
+          <p className="mb-5 font-mono text-xs font-medium uppercase tracking-[0.18em] text-[#2457d6] dark:text-[#7da7ff]">
             Lab / Working notebook
           </p>
           <h1 className="max-w-4xl text-5xl font-medium leading-[0.98] tracking-[-0.055em] sm:text-6xl lg:text-7xl">
@@ -87,7 +87,7 @@ export default function LabPage() {
           className="grid gap-10 border-b border-[var(--color-border-secondary)] py-16 sm:py-20 lg:grid-cols-12 lg:gap-10 lg:py-24"
         >
           <div className="lg:col-span-3">
-            <p className="font-mono text-[0.68rem] uppercase tracking-[0.18em] text-[var(--color-text-tertiary)]">
+            <p className="font-mono text-xs uppercase tracking-[0.16em] text-[var(--color-text-tertiary)]">
               01 / Current focus
             </p>
           </div>
@@ -139,7 +139,7 @@ export default function LabPage() {
         >
           <div className="grid gap-6 border-b border-[var(--color-border-secondary)] pb-8 lg:grid-cols-12 lg:gap-10">
             <div className="lg:col-span-3">
-              <p className="font-mono text-[0.68rem] uppercase tracking-[0.18em] text-[var(--color-text-tertiary)]">
+              <p className="font-mono text-xs uppercase tracking-[0.16em] text-[var(--color-text-tertiary)]">
                 02 / Selected experiments
               </p>
             </div>
@@ -166,7 +166,7 @@ export default function LabPage() {
                   <h3 className="text-xl font-medium tracking-[-0.025em] sm:text-2xl">
                     {experiment.title}
                   </h3>
-                  <p className="mt-2 font-mono text-[0.68rem] uppercase tracking-[0.15em] text-[var(--color-text-tertiary)]">
+                  <p className="mt-2 font-mono text-xs uppercase tracking-[0.13em] text-[var(--color-text-tertiary)]">
                     {experiment.type}
                   </p>
                 </div>
@@ -174,7 +174,7 @@ export default function LabPage() {
                   {experiment.description}
                 </p>
                 <div className="sm:col-start-2 lg:col-span-4 lg:col-start-auto">
-                  <p className="mb-2 font-mono text-[0.65rem] uppercase tracking-[0.16em] text-[var(--color-text-tertiary)]">
+                  <p className="mb-2 font-mono text-xs uppercase tracking-[0.14em] text-[var(--color-text-tertiary)]">
                     Working question
                   </p>
                   <p className="max-w-md text-sm leading-6 text-[var(--color-text-primary)]">
@@ -206,7 +206,7 @@ export default function LabPage() {
           className="grid gap-10 border-t border-[var(--color-border-secondary)] py-16 sm:py-20 lg:grid-cols-12 lg:gap-10 lg:py-24"
         >
           <div className="lg:col-span-3">
-            <p className="font-mono text-[0.68rem] uppercase tracking-[0.18em] text-[var(--color-text-tertiary)]">
+            <p className="font-mono text-xs uppercase tracking-[0.16em] text-[var(--color-text-tertiary)]">
               03 / Working notes
             </p>
           </div>
@@ -226,7 +226,7 @@ export default function LabPage() {
                   className="border-t border-[var(--color-border-secondary)] py-7 sm:py-8"
                 >
                   <dt className="flex items-baseline gap-4 text-base font-semibold tracking-[-0.015em]">
-                    <span className="font-mono text-[0.65rem] font-normal text-[#2457d6] dark:text-[#7da7ff]">
+                    <span className="font-mono text-xs font-normal text-[#2457d6] dark:text-[#7da7ff]">
                       {String(index + 1).padStart(2, "0")}
                     </span>
                     {principle.label}
@@ -246,7 +246,7 @@ export default function LabPage() {
           The useful parts of this page will change. That is the point of a
           lab.
         </p>
-        <p className="mt-4 font-mono text-[0.65rem] uppercase tracking-[0.16em] text-[var(--color-text-tertiary)] sm:mt-0">
+        <p className="mt-4 font-mono text-xs uppercase tracking-[0.14em] text-[var(--color-text-tertiary)] sm:mt-0">
           Build · observe · revise
         </p>
       </footer>
