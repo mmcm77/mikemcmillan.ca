@@ -2,100 +2,57 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useEffect, useState } from "react";
-import { ThemeToggle } from "./ThemeToggle";
 
-const Nav = () => {
+const navigation = [
+  { href: "/work", label: "Work" },
+  { href: "/lab", label: "Lab" },
+  { href: "/about", label: "About" },
+  { href: "/#contact", label: "Contact" },
+];
+
+export default function Nav() {
   const pathname = usePathname();
-  const [scrolled, setScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const isActive = (path: string) => pathname === path;
+  const isCurrent = (href: string) => {
+    if (href === "/#contact") return false;
+    return pathname === href || pathname.startsWith(`${href}/`);
+  };
 
   return (
-    <nav
-      className={`sticky top-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "backdrop-blur-xl bg-[var(--color-bg-primary)]/90 border-b border-[var(--color-border-secondary)] shadow-lg shadow-black/10"
-          : "backdrop-blur-md bg-[var(--color-bg-primary)]/60 border-b border-[var(--color-border-secondary)]/50"
-      }`}
-    >
-      <div className="flex justify-between items-center py-4 px-6 sm:px-[3rem] lg:px-[5rem] xl:px-[6rem] max-w-[1400px] mx-auto">
-        {/* Logo */}
-        <Link
-          href="/"
-          className="group transition-transform duration-300 hover:scale-105"
-        >
-          <span className="text-base font-bold text-[var(--color-text-primary)] tracking-tight">
-            Mike McMillan
-          </span>
+    <header className="site-header">
+      <nav className="site-nav" aria-label="Primary navigation">
+        <Link href="/" className="site-mark" aria-label="Mike McMillan, home">
+          <span>Mike McMillan</span>
+          <span className="site-mark-role">Product leader · Builder</span>
         </Link>
 
-        {/* Navigation Links - Minimalist Style */}
-        <div className="flex items-center gap-6 sm:gap-8">
-          <Link
-            href="/"
-            className="group relative py-2 font-medium text-xs sm:text-sm transition-colors duration-200"
-          >
-            <span className={`transition-colors duration-200 ${
-              isActive("/")
-                ? "text-[var(--color-text-primary)]"
-                : "text-[var(--color-text-secondary)] group-hover:text-[var(--color-text-primary)]"
-            }`}>
-              Home
-            </span>
-            <span className={`absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-[var(--color-brand-primary)] to-[var(--color-accent-blue)] transition-all duration-300 ${
-              isActive("/")
-                ? "opacity-100 scale-x-100"
-                : "opacity-0 scale-x-0 group-hover:opacity-50 group-hover:scale-x-100"
-            }`}></span>
-          </Link>
-          <Link
-            href="/work"
-            className="group relative py-2 font-medium text-xs sm:text-sm transition-colors duration-200"
-          >
-            <span className={`transition-colors duration-200 ${
-              isActive("/work")
-                ? "text-[var(--color-text-primary)]"
-                : "text-[var(--color-text-secondary)] group-hover:text-[var(--color-text-primary)]"
-            }`}>
-              Work
-            </span>
-            <span className={`absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-[var(--color-brand-primary)] to-[var(--color-accent-blue)] transition-all duration-300 ${
-              isActive("/work")
-                ? "opacity-100 scale-x-100"
-                : "opacity-0 scale-x-0 group-hover:opacity-50 group-hover:scale-x-100"
-            }`}></span>
-          </Link>
-          <Link
-            href="/ai-tools"
-            className="group relative py-2 font-medium text-xs sm:text-sm transition-colors duration-200"
-          >
-            <span className={`transition-colors duration-200 ${
-              isActive("/ai-tools")
-                ? "text-[var(--color-text-primary)]"
-                : "text-[var(--color-text-secondary)] group-hover:text-[var(--color-text-primary)]"
-            }`}>
-              AI Tools
-            </span>
-            <span className={`absolute inset-x-0 -bottom-1 h-0.5 bg-gradient-to-r from-[var(--color-brand-primary)] to-[var(--color-accent-blue)] transition-all duration-300 ${
-              isActive("/ai-tools")
-                ? "opacity-100 scale-x-100"
-                : "opacity-0 scale-x-0 group-hover:opacity-50 group-hover:scale-x-100"
-            }`}></span>
-          </Link>
-          <ThemeToggle />
+        <div className="desktop-nav" aria-label="Primary links">
+          {navigation.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              aria-current={isCurrent(item.href) ? "page" : undefined}
+            >
+              {item.label}
+            </Link>
+          ))}
         </div>
-      </div>
-    </nav>
-  );
-};
 
-export default Nav;
+        <details className="mobile-nav">
+          <summary>Menu</summary>
+          <div className="mobile-nav-panel">
+            {navigation.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                aria-current={isCurrent(item.href) ? "page" : undefined}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
+        </details>
+      </nav>
+    </header>
+  );
+}

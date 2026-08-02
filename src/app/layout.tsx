@@ -1,58 +1,41 @@
 import "./globals.css";
 import Nav from "../components/Nav";
-import { ThemeProvider } from "../components/ThemeProvider";
 import { Metadata } from "next";
 import React from "react";
 import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://mikemcmillan.ca'),
-  title: {
-    default: "Mike McMillan | Product Leader - AI-Powered Products",
-    template: "%s | Mike McMillan"
-  },
+  metadataBase: new URL("https://mikemcmillan.ca"),
+  title: "Mike McMillan — Product leader and hands-on builder",
   description:
-    "Product leader with 10+ years building AI-powered products that drive revenue at scale. Led AI-powered product to acquisition, built ML infrastructure serving 100K+ users, raised $50M+ leveraging AI/ML across fintech and SaaS.",
-  keywords: [
-    "AI-powered products",
-    "product manager",
-    "machine learning products",
-    "AI product development",
-    "ML infrastructure",
-    "product leadership",
-    "AI strategy",
-    "product management",
-    "fintech AI",
-    "SaaS products",
-    "AI acquisition",
-    "ML product strategy"
-  ],
+    "Product leader and hands-on builder working across commerce, financial infrastructure, developer platforms, and applied AI.",
   authors: [{ name: "Mike McMillan" }],
   creator: "Mike McMillan",
+  publisher: "Mike McMillan",
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "en_CA",
     url: "https://mikemcmillan.ca",
-    siteName: "Mike McMillan | Product Leader",
-    title: "Mike McMillan | Product Leader - Building AI-Powered Products at Scale",
+    siteName: "Mike McMillan",
+    title: "Mike McMillan — Product leader and hands-on builder",
     description:
-      "Product leader with 10+ years building AI-powered products that drive revenue. Led AI-powered product to acquisition, built ML infrastructure serving 100K+ users, raised $50M+ across fintech and SaaS.",
+      "Working across commerce, financial infrastructure, developer platforms, and applied AI.",
     images: [
       {
-        url: "/og-image.png",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
-        alt: "Mike McMillan - Product Leader Portfolio",
+        alt: "Mike McMillan — product leader and hands-on builder",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mike McMillan | Product Leader - AI-Powered Products",
+    title: "Mike McMillan — Product leader and hands-on builder",
     description:
-      "Building AI-powered products that drive revenue at scale. Led AI product to acquisition, built ML infrastructure serving 100K+ users.",
-    images: ["/og-image.png"],
+      "Working across commerce, financial infrastructure, developer platforms, and applied AI.",
+    images: ["/twitter-image"],
   },
   robots: {
     index: true,
@@ -60,9 +43,9 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
 };
@@ -73,14 +56,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`} suppressHydrationWarning>
+    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <body>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
-          <Nav />
-          <main className="px-6 sm:px-[3rem] lg:px-[5rem] xl:px-[6rem] max-w-[1400px] mx-auto">
-            {children}
-          </main>
-        </ThemeProvider>
+        <Nav />
+        {children}
       </body>
     </html>
   );
