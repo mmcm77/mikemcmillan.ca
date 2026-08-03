@@ -7,3 +7,21 @@ updates:
       day: "monday"
       time: "09:00"
       timezone: "America/Toronto"
+    ignore:
+      - dependency-name: "@types/node"
+        versions:
+          - ">=23"
+      - dependency-name: "eslint"
+        versions:
+          - ">=10"
+      - dependency-name: "typescript"
+        versions:
+          - ">=7"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "America/Toronto"
